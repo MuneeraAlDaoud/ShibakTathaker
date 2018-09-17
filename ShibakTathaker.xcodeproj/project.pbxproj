@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3321502DF500839FA5 /* AppDelegate.swift */; };
+		DA718F3621502DF500839FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3521502DF500839FA5 /* ViewController.swift */; };
+		DA718F3921502DF500839FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA718F3721502DF500839FA5 /* Main.storyboard */; };
+		DA718F3B21502DF600839FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA718F3A21502DF600839FA5 /* Assets.xcassets */; };
+		DA718F3E21502DF600839FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA718F3C21502DF600839FA5 /* LaunchScreen.storyboard */; };
+		DA718F4921502DF600839FA5 /* ShibakTathakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F4821502DF600839FA5 /* ShibakTathakerTests.swift */; };
+		DA718F5421502DF600839FA5 /* ShibakTathakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F5321502DF600839FA5 /* ShibakTathakerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA718F4521502DF600839FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA718F2821502DF500839FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA718F2F21502DF500839FA5;
+			remoteInfo = ShibakTathaker;
+		};
+		DA718F5021502DF600839FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA718F2821502DF500839FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA718F2F21502DF500839FA5;
+			remoteInfo = ShibakTathaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA718F3021502DF500839FA5 /* ShibakTathaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShibakTathaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA718F3321502DF500839FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA718F3521502DF500839FA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA718F3821502DF500839FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA718F3A21502DF600839FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA718F3D21502DF600839FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA718F3F21502DF600839FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA718F4421502DF600839FA5 /* ShibakTathakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShibakTathakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA718F4821502DF600839FA5 /* ShibakTathakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShibakTathakerTests.swift; sourceTree = "<group>"; };
+		DA718F4A21502DF600839FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA718F4F21502DF600839FA5 /* ShibakTathakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShibakTathakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA718F5321502DF600839FA5 /* ShibakTathakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShibakTathakerUITests.swift; sourceTree = "<group>"; };
+		DA718F5521502DF600839FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA718F2D21502DF500839FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA718F4121502DF600839FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA718F4C21502DF600839FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA718F2721502DF500839FA5 = {
+			isa = PBXGroup;
+			children = (
+				DA718F3221502DF500839FA5 /* ShibakTathaker */,
+				DA718F4721502DF600839FA5 /* ShibakTathakerTests */,
+				DA718F5221502DF600839FA5 /* ShibakTathakerUITests */,
+				DA718F3121502DF500839FA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA718F3121502DF500839FA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA718F3021502DF500839FA5 /* ShibakTathaker.app */,
+				DA718F4421502DF600839FA5 /* ShibakTathakerTests.xctest */,
+				DA718F4F21502DF600839FA5 /* ShibakTathakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA718F3221502DF500839FA5 /* ShibakTathaker */ = {
+			isa = PBXGroup;
+			children = (
+				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
+				DA718F3521502DF500839FA5 /* ViewController.swift */,
+				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				DA718F3A21502DF600839FA5 /* Assets.xcassets */,
+				DA718F3C21502DF600839FA5 /* LaunchScreen.storyboard */,
+				DA718F3F21502DF600839FA5 /* Info.plist */,
+			);
+			path = ShibakTathaker;
+			sourceTree = "<group>";
+		};
+		DA718F4721502DF600839FA5 /* ShibakTathakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA718F4821502DF600839FA5 /* ShibakTathakerTests.swift */,
+				DA718F4A21502DF600839FA5 /* Info.plist */,
+			);
+			path = ShibakTathakerTests;
+			sourceTree = "<group>";
+		};
+		DA718F5221502DF600839FA5 /* ShibakTathakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA718F5321502DF600839FA5 /* ShibakTathakerUITests.swift */,
+				DA718F5521502DF600839FA5 /* Info.plist */,
+			);
+			path = ShibakTathakerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA718F2F21502DF500839FA5 /* ShibakTathaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA718F5821502DF600839FA5 /* Build configuration list for PBXNativeTarget "ShibakTathaker" */;
+			buildPhases = (
+				DA718F2C21502DF500839FA5 /* Sources */,
+				DA718F2D21502DF500839FA5 /* Frameworks */,
+				DA718F2E21502DF500839FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShibakTathaker;
+			productName = ShibakTathaker;
+			productReference = DA718F3021502DF500839FA5 /* ShibakTathaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA718F4321502DF600839FA5 /* ShibakTathakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA718F5B21502DF600839FA5 /* Build configuration list for PBXNativeTarget "ShibakTathakerTests" */;
+			buildPhases = (
+				DA718F4021502DF600839FA5 /* Sources */,
+				DA718F4121502DF600839FA5 /* Frameworks */,
+				DA718F4221502DF600839FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA718F4621502DF600839FA5 /* PBXTargetDependency */,
+			);
+			name = ShibakTathakerTests;
+			productName = ShibakTathakerTests;
+			productReference = DA718F4421502DF600839FA5 /* ShibakTathakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA718F4E21502DF600839FA5 /* ShibakTathakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA718F5E21502DF600839FA5 /* Build configuration list for PBXNativeTarget "ShibakTathakerUITests" */;
+			buildPhases = (
+				DA718F4B21502DF600839FA5 /* Sources */,
+				DA718F4C21502DF600839FA5 /* Frameworks */,
+				DA718F4D21502DF600839FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA718F5121502DF600839FA5 /* PBXTargetDependency */,
+			);
+			name = ShibakTathakerUITests;
+			productName = ShibakTathakerUITests;
+			productReference = DA718F4F21502DF600839FA5 /* ShibakTathakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA718F2821502DF500839FA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Muneera AlDaoud";
+				TargetAttributes = {
+					DA718F2F21502DF500839FA5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DA718F4321502DF600839FA5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DA718F2F21502DF500839FA5;
+					};
+					DA718F4E21502DF600839FA5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DA718F2F21502DF500839FA5;
+					};
+				};
+			};
+			buildConfigurationList = DA718F2B21502DF500839FA5 /* Build configuration list for PBXProject "ShibakTathaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA718F2721502DF500839FA5;
+			productRefGroup = DA718F3121502DF500839FA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA718F2F21502DF500839FA5 /* ShibakTathaker */,
+				DA718F4321502DF600839FA5 /* ShibakTathakerTests */,
+				DA718F4E21502DF600839FA5 /* ShibakTathakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA718F2E21502DF500839FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA718F3E21502DF600839FA5 /* LaunchScreen.storyboard in Resources */,
+				DA718F3B21502DF600839FA5 /* Assets.xcassets in Resources */,
+				DA718F3921502DF500839FA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA718F4221502DF600839FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA718F4D21502DF600839FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA718F2C21502DF500839FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA718F3621502DF500839FA5 /* ViewController.swift in Sources */,
+				DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA718F4021502DF600839FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA718F4921502DF600839FA5 /* ShibakTathakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA718F4B21502DF600839FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA718F5421502DF600839FA5 /* ShibakTathakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA718F4621502DF600839FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA718F2F21502DF500839FA5 /* ShibakTathaker */;
+			targetProxy = DA718F4521502DF600839FA5 /* PBXContainerItemProxy */;
+		};
+		DA718F5121502DF600839FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA718F2F21502DF500839FA5 /* ShibakTathaker */;
+			targetProxy = DA718F5021502DF600839FA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA718F3721502DF500839FA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA718F3821502DF500839FA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA718F3C21502DF600839FA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA718F3D21502DF600839FA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA718F5621502DF600839FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA718F5721502DF600839FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA718F5921502DF600839FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShibakTathaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA718F5A21502DF600839FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShibakTathaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA718F5C21502DF600839FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShibakTathakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShibakTathaker.app/ShibakTathaker";
+			};
+			name = Debug;
+		};
+		DA718F5D21502DF600839FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShibakTathakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShibakTathaker.app/ShibakTathaker";
+			};
+			name = Release;
+		};
+		DA718F5F21502DF600839FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShibakTathakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShibakTathaker;
+			};
+			name = Debug;
+		};
+		DA718F6021502DF600839FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShibakTathakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShibakTathaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA718F2B21502DF500839FA5 /* Build configuration list for PBXProject "ShibakTathaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA718F5621502DF600839FA5 /* Debug */,
+				DA718F5721502DF600839FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA718F5821502DF600839FA5 /* Build configuration list for PBXNativeTarget "ShibakTathaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA718F5921502DF600839FA5 /* Debug */,
+				DA718F5A21502DF600839FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA718F5B21502DF600839FA5 /* Build configuration list for PBXNativeTarget "ShibakTathakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA718F5C21502DF600839FA5 /* Debug */,
+				DA718F5D21502DF600839FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA718F5E21502DF600839FA5 /* Build configuration list for PBXNativeTarget "ShibakTathakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA718F5F21502DF600839FA5 /* Debug */,
+				DA718F6021502DF600839FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA718F2821502DF500839FA5 /* Project object */;
+}
