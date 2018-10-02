@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ShibakTathaker.xcodeproj">
+      location = "group:../../ShibakTathakerImages">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
