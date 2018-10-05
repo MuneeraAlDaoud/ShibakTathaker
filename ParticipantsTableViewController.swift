@@ -11,11 +11,11 @@ import UIKit
 class ParticipantsTableViewController: UITableViewController {
 
     
-    @IBOutlet weak var Pusername: UILabel!
-    @IBOutlet weak var activity_type: UILabel!
-    @IBOutlet weak var Porgname: UILabel!
-    @IBOutlet weak var Pemail: UILabel!
-    @IBOutlet weak var Pphone: UILabel!
+//    @IBOutlet weak var Pusername: UILabel!
+//    @IBOutlet weak var activity_type: UILabel!
+//    @IBOutlet weak var Porgname: UILabel!
+//    @IBOutlet weak var Pemail: UILabel!
+//    @IBOutlet weak var Pphone: UILabel!
     
     
     override func viewDidLoad() {
