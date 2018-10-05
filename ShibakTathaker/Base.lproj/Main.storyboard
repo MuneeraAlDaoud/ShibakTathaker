@@ -390,7 +390,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcy-uN-9Pt">
-                                <rect key="frame" x="139" y="158" width="97" height="33"/>
+                                <rect key="frame" x="139" y="178" width="97" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.64313725489999995" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.99595564603805542" green="0.99619156122207642" blue="0.99164885282516479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,7 +403,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDJ-0B-VWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781.60000000000002" y="1654.7226386806599"/>
+            <point key="canvasLocation" x="780" y="1669"/>
+        </scene>
+        <!--Add Event View Controller-->
+        <scene sceneID="1O5-8J-Jf5">
+            <objects>
+                <viewController id="yNC-mN-OCp" customClass="AddEventViewController" customModule="ShibakTathaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8DZ-fb-cFg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4GA-go-oOy">
+                                <rect key="frame" x="16" y="133" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELn-j4-wku">
+                                <rect key="frame" x="16" y="185" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PGS-9t-cWZ">
+                                <rect key="frame" x="16" y="334" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Shq-p2-nr8">
+                                <rect key="frame" x="16" y="390" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event day" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-W4-EPF">
+                                <rect key="frame" x="16" y="239" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="91y-Fd-hIs">
+                                <rect key="frame" x="16" y="288" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Picture url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJ8-a3-hh1">
+                                <rect key="frame" x="16" y="84" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event minutes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TEy-bM-kuR">
+                                <rect key="frame" x="16" y="440" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PwB-s5-I1O">
+                                <rect key="frame" x="16" y="489" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ri7-rd-bHF"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldEvent_day" destination="lyC-W4-EPF" id="Xvs-4C-MHH"/>
+                        <outlet property="textFieldEvent_hour" destination="Shq-p2-nr8" id="oSY-FX-bIj"/>
+                        <outlet property="textFieldEvent_location" destination="ELn-j4-wku" id="qlB-nG-ZoY"/>
+                        <outlet property="textFieldEvent_minute" destination="TEy-bM-kuR" id="xhL-cb-TEf"/>
+                        <outlet property="textFieldEvent_month" destination="91y-Fd-hIs" id="svI-Xn-25w"/>
+                        <outlet property="textFieldEvent_name" destination="4GA-go-oOy" id="X7R-cv-3We"/>
+                        <outlet property="textFieldEvent_pictureUrl" destination="dJ8-a3-hh1" id="ryv-Il-We9"/>
+                        <outlet property="textFieldEvent_type" destination="PwB-s5-I1O" id="PRT-9d-dOq"/>
+                        <outlet property="textFieldEvent_year" destination="PGS-9t-cWZ" id="Xa0-5f-4yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vge-bC-TZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="2344.6776611694154"/>
         </scene>
         <!--Participant Profile View Controller-->
         <scene sceneID="ucQ-Lw-Cud">
@@ -1032,12 +1123,12 @@
         <image name="ticket-window" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GqG-2I-9fK"/>
+        <segue reference="fcF-lx-mwB"/>
         <segue reference="zRQ-J4-Czd"/>
         <segue reference="Ul5-2d-V8i"/>
         <segue reference="492-nQ-s9Y"/>
-        <segue reference="WTx-sy-he7"/>
-        <segue reference="nkr-ZW-pRf"/>
+        <segue reference="PE9-sy-Go0"/>
+        <segue reference="wfM-Ka-mWR"/>
         <segue reference="YFQ-HN-itg"/>
         <segue reference="6Xh-Oi-X12"/>
     </inferredMetricsTieBreakers>

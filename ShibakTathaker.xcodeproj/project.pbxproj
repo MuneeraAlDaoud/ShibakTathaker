@@ -11,6 +11,7 @@
 		DA10C2F521652E850009FA70 /* participants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F421652E850009FA70 /* participants.swift */; };
 		DA10C2F7216533280009FA70 /* ParticipantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */; };
 		DA10C2F92165499C0009FA70 /* ParticipantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */; };
+		DA10C2FB216772E80009FA70 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2FA216772E80009FA70 /* AddEventViewController.swift */; };
 		DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */; };
 		DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3321502DF500839FA5 /* AppDelegate.swift */; };
 		DA718F3621502DF500839FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3521502DF500839FA5 /* ViewController.swift */; };
@@ -124,6 +125,7 @@
 		DA10C2F421652E850009FA70 /* participants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = participants.swift; sourceTree = "<group>"; };
 		DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C2FA216772E80009FA70 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA718F3021502DF500839FA5 /* ShibakTathaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShibakTathaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA718F3321502DF500839FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				DA10C2FA216772E80009FA70 /* AddEventViewController.swift */,
 				DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */,
 				DA10C2F421652E850009FA70 /* participants.swift */,
 				DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */,
@@ -464,6 +467,7 @@
 				DA10C2F92165499C0009FA70 /* ParticipantsTableViewController.swift in Sources */,
 				DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */,
 				DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */,
+				DA10C2FB216772E80009FA70 /* AddEventViewController.swift in Sources */,
 				DA10C2EF2165208F0009FA70 /* SWRevealViewController.m in Sources */,
 				DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */,
 			);
