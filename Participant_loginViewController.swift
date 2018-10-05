@@ -142,8 +142,6 @@ class Participant_loginViewController: UIViewController {
         // Do any additional setup after loading the view.
         
 
-        
-        
     }//end viewDidLoad
     
 

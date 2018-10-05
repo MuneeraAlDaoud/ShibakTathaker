@@ -10,6 +10,8 @@ import UIKit
 import SQLite3
 import CoreData
 
+/*
+
 class Participant_forgotPasswordViewController: UIViewController {
 
     
@@ -101,4 +103,4 @@ class Participant_forgotPasswordViewController: UIViewController {
     }
     */
 
-}
+}*/

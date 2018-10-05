@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA10C2EF2165208F0009FA70 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2EE2165208F0009FA70 /* SWRevealViewController.m */; };
+		DA10C2F521652E850009FA70 /* participants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F421652E850009FA70 /* participants.swift */; };
+		DA10C2F7216533280009FA70 /* ParticipantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */; };
+		DA10C2F92165499C0009FA70 /* ParticipantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */; };
 		DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */; };
 		DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3321502DF500839FA5 /* AppDelegate.swift */; };
 		DA718F3621502DF500839FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3521502DF500839FA5 /* ViewController.swift */; };
@@ -114,6 +118,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA10C2EC2165208E0009FA70 /* ShibakTathaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShibakTathaker-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA10C2ED2165208F0009FA70 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../Downloads/SWRevealViewControllers/SWRevealViewController.h; sourceTree = "<group>"; };
+		DA10C2EE2165208F0009FA70 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../Downloads/SWRevealViewControllers/SWRevealViewController.m; sourceTree = "<group>"; };
+		DA10C2F421652E850009FA70 /* participants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = participants.swift; sourceTree = "<group>"; };
+		DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA718F3021502DF500839FA5 /* ShibakTathaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShibakTathaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA718F3321502DF500839FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,16 +202,22 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */,
+				DA10C2F421652E850009FA70 /* participants.swift */,
 				DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */,
 				DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */,
+				DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */,
 				DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */,
 				DAA35CCC2157ADD500365AD1 /* Owner_loginViewController.swift */,
 				DAA35CC921557DED00365AD1 /* Visitor_registration.swift */,
 				DAA35CC72154FEED00365AD1 /* Participant_registration.swift */,
 				DAA35CBF2154E41C00365AD1 /* Owner registration view.swift */,
+				DA10C2ED2165208F0009FA70 /* SWRevealViewController.h */,
+				DA10C2EE2165208F0009FA70 /* SWRevealViewController.m */,
 				DA718F3A21502DF600839FA5 /* Assets.xcassets */,
 				DA718F3C21502DF600839FA5 /* LaunchScreen.storyboard */,
 				DA718F3F21502DF600839FA5 /* Info.plist */,
+				DA10C2EC2165208E0009FA70 /* ShibakTathaker-Bridging-Header.h */,
 			);
 			path = ShibakTathaker;
 			sourceTree = "<group>";
@@ -315,6 +331,7 @@
 				TargetAttributes = {
 					DA718F2F21502DF500839FA5 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					DA718F4321502DF600839FA5 = {
 						CreatedOnToolsVersion = 10.0;
@@ -439,11 +456,15 @@
 				DAA35CC02154E41C00365AD1 /* Owner registration view.swift in Sources */,
 				DA718F3621502DF500839FA5 /* ViewController.swift in Sources */,
 				DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */,
+				DA10C2F521652E850009FA70 /* participants.swift in Sources */,
+				DA10C2F7216533280009FA70 /* ParticipantProfileViewController.swift in Sources */,
 				DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */,
 				DAA35CCA21557DED00365AD1 /* Visitor_registration.swift in Sources */,
 				DAA35CC82154FEED00365AD1 /* Participant_registration.swift in Sources */,
+				DA10C2F92165499C0009FA70 /* ParticipantsTableViewController.swift in Sources */,
 				DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */,
 				DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */,
+				DA10C2EF2165208F0009FA70 /* SWRevealViewController.m in Sources */,
 				DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,15 +646,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V9ZQBQJ24J;
+				DEVELOPMENT_TEAM = 3J47ZC26GX;
 				INFOPLIST_FILE = ShibakTathaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathaker;
+				PRODUCT_BUNDLE_IDENTIFIER = ShibakTathaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShibakTathaker/ShibakTathaker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -644,15 +668,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V9ZQBQJ24J;
+				DEVELOPMENT_TEAM = 3J47ZC26GX;
 				INFOPLIST_FILE = ShibakTathaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = KSU.ShibakTathaker;
+				PRODUCT_BUNDLE_IDENTIFIER = ShibakTathaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShibakTathaker/ShibakTathaker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
