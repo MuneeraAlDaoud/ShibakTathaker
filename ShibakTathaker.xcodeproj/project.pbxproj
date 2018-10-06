@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DA10C2F521652E850009FA70 /* participants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F421652E850009FA70 /* participants.swift */; };
-		DA10C2F7216533280009FA70 /* ParticipantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */; };
-		DA10C2F92165499C0009FA70 /* ParticipantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */; };
+		DA10C2FD21690EE30009FA70 /* ParticipantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2FC21690EE30009FA70 /* ParticipantsTableViewController.swift */; };
+		DA10C30021691B3A0009FA70 /* ParticipantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C2FE21691B3A0009FA70 /* ParticipantTableViewCell.swift */; };
+		DA10C30121691B3A0009FA70 /* ParticipantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA10C2FF21691B3A0009FA70 /* ParticipantTableViewCell.xib */; };
 		DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */; };
 		DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3321502DF500839FA5 /* AppDelegate.swift */; };
 		DA718F3621502DF500839FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3521502DF500839FA5 /* ViewController.swift */; };
@@ -119,8 +120,9 @@
 /* Begin PBXFileReference section */
 		DA10C2EC2165208E0009FA70 /* ShibakTathaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShibakTathaker-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA10C2F421652E850009FA70 /* participants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = participants.swift; sourceTree = "<group>"; };
-		DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantProfileViewController.swift; sourceTree = SOURCE_ROOT; };
-		DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C2FC21690EE30009FA70 /* ParticipantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsTableViewController.swift; sourceTree = "<group>"; };
+		DA10C2FE21691B3A0009FA70 /* ParticipantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		DA10C2FF21691B3A0009FA70 /* ParticipantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA718F3021502DF500839FA5 /* ShibakTathaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShibakTathaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA718F3321502DF500839FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -199,9 +201,10 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
-				DA10C2F82165499C0009FA70 /* ParticipantsTableViewController.swift */,
+				DA10C2FE21691B3A0009FA70 /* ParticipantTableViewCell.swift */,
+				DA10C2FF21691B3A0009FA70 /* ParticipantTableViewCell.xib */,
 				DA10C2F421652E850009FA70 /* participants.swift */,
-				DA10C2F6216533280009FA70 /* ParticipantProfileViewController.swift */,
+				DA10C2FC21690EE30009FA70 /* ParticipantsTableViewController.swift */,
 				DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */,
 				DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */,
 				DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */,
@@ -424,6 +427,7 @@
 				DA718F3E21502DF600839FA5 /* LaunchScreen.storyboard in Resources */,
 				DA718F3B21502DF600839FA5 /* Assets.xcassets in Resources */,
 				DA718F3921502DF500839FA5 /* Main.storyboard in Resources */,
+				DA10C30121691B3A0009FA70 /* ParticipantTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,14 +456,14 @@
 				DA718F3621502DF500839FA5 /* ViewController.swift in Sources */,
 				DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */,
 				DA10C2F521652E850009FA70 /* participants.swift in Sources */,
-				DA10C2F7216533280009FA70 /* ParticipantProfileViewController.swift in Sources */,
 				DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */,
 				DAA35CCA21557DED00365AD1 /* Visitor_registration.swift in Sources */,
 				DAA35CC82154FEED00365AD1 /* Participant_registration.swift in Sources */,
-				DA10C2F92165499C0009FA70 /* ParticipantsTableViewController.swift in Sources */,
 				DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */,
+				DA10C2FD21690EE30009FA70 /* ParticipantsTableViewController.swift in Sources */,
 				DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */,
 				DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */,
+				DA10C30021691B3A0009FA70 /* ParticipantTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
