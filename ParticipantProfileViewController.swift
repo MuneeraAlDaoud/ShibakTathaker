@@ -9,46 +9,19 @@
 import UIKit
 import SQLite3
 
-/*
+
 class ParticipantProfileViewController: UIViewController,UITableViewDataSource ,UITableViewDelegate{
    
     
-    @IBOutlet weak var ParticipantsTable: UITableView!
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
+ 
     
     
     var participantsList=[participants]()
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return participantsList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> ParticipantsTableViewController {
-        let Cell = tableView.dequeueReusableCell (withIdentifier: "cell") as! ParticipantsTableViewController
-        
-        
-        let participant: participants
-        participant = participantsList[indexPath.row]
-        
-        Cell.Pusername.text = participant.username
-        Cell.activity_type.text = participant.activity_type
-        Cell.Porgname.text = participant.organization_name
-        Cell.Pemail.text = participant.email
-        Cell.Pphone.text = String(participant.phone)
-        
-        return Cell
-        
-    }
-    
    
-    
-
     var db: OpaquePointer?
 
-    @IBOutlet weak var tableViewParticipants: UITableView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -106,4 +79,4 @@ class ParticipantProfileViewController: UIViewController,UITableViewDataSource ,
     }
     */
 
-}*/
+}
