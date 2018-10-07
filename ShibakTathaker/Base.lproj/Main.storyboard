@@ -1171,10 +1171,10 @@
             </objects>
             <point key="canvasLocation" x="1860" y="1743.778110944528"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Event View Controller-->
         <scene sceneID="EAi-dH-tSB">
             <objects>
-                <viewController id="bKZ-rs-NQN" sceneMemberID="viewController">
+                <viewController id="bKZ-rs-NQN" customClass="AddEventViewController" customModule="ShibakTathaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5t2-Bi-pDP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1219,8 +1219,7 @@
                                 <color key="tintColor" red="1" green="0.97701674419999995" blue="0.98560439639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Add Event"/>
                                 <connections>
-                                    <action selector="Owner_registration:" destination="4DJ-Wt-i6K" eventType="touchUpInside" id="fxz-aY-HTv"/>
-                                    <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="HXb-nS-Mg8"/>
+                                    <action selector="Add_Event:" destination="bKZ-rs-NQN" eventType="touchUpInside" id="tuT-Ih-htA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgB-ym-3d2">
@@ -1255,6 +1254,13 @@
                         <color key="backgroundColor" red="0.62041836979999998" green="0.81016987559999998" blue="0.91768103840000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="821-60-xC9"/>
                     </view>
+                    <connections>
+                        <outlet property="Picker" destination="Jzs-bf-fBZ" id="Rep-sj-LfP"/>
+                        <outlet property="textFieldEvent_location" destination="cd6-po-V5V" id="pVM-UY-8EZ"/>
+                        <outlet property="textFieldEvent_name" destination="u5K-cQ-NgI" id="9uT-dw-qzR"/>
+                        <outlet property="textFieldEvent_pictureUrl" destination="Xny-oU-HMK" id="dOP-TY-wmH"/>
+                        <outlet property="textFieldEvent_type" destination="AGd-Un-oYI" id="es2-1K-oab"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpO-NS-XSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

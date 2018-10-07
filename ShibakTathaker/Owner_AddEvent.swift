@@ -38,10 +38,33 @@ class AddEventViewController: UIViewController {
 //        let Event_minute = textFieldEvent_minute.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let Event_type = textFieldEvent_type.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let Event_dateFull = DateFormatter.localizedString(from: Picker.date, dateStyle: DateFormatter.Style.full , timeStyle: DateFormatter.Style.short)
+        
         let day = DateFormatter ()
         day.dateFormat = "dd"
         let Event_day = day.string(from: Picker.date)
         print (Event_day)
+        
+        let month = DateFormatter ()
+        month.dateFormat = "MM"
+        let Event_month = day.string(from: Picker.date)
+        print (Event_month)
+        
+        let year = DateFormatter ()
+        year.dateFormat = "yyyy"
+        let Event_year = year.string(from: Picker.date)
+        print (Event_year)
+
+        let hours = DateFormatter ()
+        hours.dateFormat = "hh"
+        let Event_hour = hours.string(from: Picker.date)
+        print (Event_hour)
+
+        let minutes = DateFormatter ()
+        minutes.dateFormat = "mm"
+        let Event_minute = minutes.string(from: Picker.date)
+        print (Event_minute)
+
+        
     
         //validating that values are not empty
         if(Event_picture?.isEmpty)!{
@@ -284,33 +307,33 @@ class AddEventViewController: UIViewController {
             return
         }
         
-     /*   if sqlite3_bind_int(stmt, 4, (Event_day! as NSString).intValue) != SQLITE_OK{
+        if sqlite3_bind_int(stmt, 4, (Event_day as NSString).intValue) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding day: \(errmsg)")
             return
         }
         
-        if sqlite3_bind_int(stmt, 5, (Event_month! as NSString).intValue) != SQLITE_OK{
+        if sqlite3_bind_int(stmt, 5, (Event_month as NSString).intValue) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding month: \(errmsg)")
             return
         }
-        if sqlite3_bind_int(stmt, 6, (Event_year! as NSString).intValue) != SQLITE_OK{
+        if sqlite3_bind_int(stmt, 6, (Event_year as NSString).intValue) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding year: \(errmsg)")
             return
         }
-        if sqlite3_bind_int(stmt, 7, (Event_hour! as NSString).intValue) != SQLITE_OK{
+        if sqlite3_bind_int(stmt, 7, (Event_hour as NSString).intValue) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding hour: \(errmsg)")
             return
         }
-        if sqlite3_bind_int(stmt, 8, (Event_minute! as NSString).intValue) != SQLITE_OK{
+        if sqlite3_bind_int(stmt, 8, (Event_minute as NSString).intValue) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding minute: \(errmsg)")
             return
-        }*/
-        if sqlite3_bind_text(stmt, 4, Event_type, -1, SQLITE_TRANSIENT) != SQLITE_OK{
+        }
+        if sqlite3_bind_text(stmt, 9, Event_type, -1, SQLITE_TRANSIENT) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding type: \(errmsg)")
             return
