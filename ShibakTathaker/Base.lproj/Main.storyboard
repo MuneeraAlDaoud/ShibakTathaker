@@ -773,6 +773,7 @@
                                 <connections>
                                     <action selector="Owner_login:" destination="T4d-5R-kEF" eventType="touchUpInside" id="nra-9e-Uly"/>
                                     <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="jhF-ee-mYy"/>
+                                    <segue destination="bKZ-rs-NQN" kind="show" id="v8P-c3-Koa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-tN-ASd">
@@ -1170,24 +1171,113 @@
             </objects>
             <point key="canvasLocation" x="1860" y="1743.778110944528"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EAi-dH-tSB">
+            <objects>
+                <viewController id="bKZ-rs-NQN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5t2-Bi-pDP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u5K-cQ-NgI">
+                                <rect key="frame" x="43" y="162" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="picture url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xny-oU-HMK">
+                                <rect key="frame" x="43" y="116" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-5f-vai">
+                                <rect key="frame" x="50" y="515" width="117" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Cancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Owner_login:" destination="T4d-5R-kEF" eventType="touchUpInside" id="0cY-hS-dbH"/>
+                                    <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="dYb-lZ-Wiu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcS-21-K1f">
+                                <rect key="frame" x="208" y="515" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.43137254899999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="tintColor" red="1" green="0.97701674419999995" blue="0.98560439639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Add Event"/>
+                                <connections>
+                                    <action selector="Owner_registration:" destination="4DJ-Wt-i6K" eventType="touchUpInside" id="fxz-aY-HTv"/>
+                                    <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="HXb-nS-Mg8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgB-ym-3d2">
+                                <rect key="frame" x="81" y="49" width="212" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="30"/>
+                                <color key="textColor" red="0.99595564599999997" green="0.99619156119999996" blue="0.99164885280000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jzs-bf-fBZ">
+                                <rect key="frame" x="43" y="270" width="277" height="127"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="560585066.14826298">
+                                    <!--2018-10-07 06:04:26 +0000-->
+                                </date>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-po-V5V">
+                                <rect key="frame" x="43" y="207" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="location"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-Un-oYI">
+                                <rect key="frame" x="50" y="430" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62041836979999998" green="0.81016987559999998" blue="0.91768103840000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="821-60-xC9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpO-NS-XSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="-626.53673163418296"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="amusement-park (1)" width="512" height="512"/>
-        <image name="back" width="512" height="512"/>
+        <image name="amusement-park (1)" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="back" width="409.60000610351562" height="409.60000610351562"/>
         <image name="login-frameFIXED" width="2177" height="2409"/>
-        <image name="magician (1)" width="512" height="512"/>
-        <image name="menu" width="512" height="512"/>
-        <image name="roller-coaster (1)" width="512" height="512"/>
+        <image name="magician (1)" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="menu" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="roller-coaster (1)" width="409.60000610351562" height="409.60000610351562"/>
         <image name="ticket (2)" width="789" height="643"/>
-        <image name="ticket-window" width="512" height="512"/>
+        <image name="ticket-window" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fcF-lx-mwB"/>
         <segue reference="zRQ-J4-Czd"/>
         <segue reference="Ul5-2d-V8i"/>
-        <segue reference="492-nQ-s9Y"/>
+        <segue reference="voH-bW-U1t"/>
         <segue reference="WTx-sy-he7"/>
-        <segue reference="wfM-Ka-mWR"/>
+        <segue reference="sDL-ls-K7Y"/>
         <segue reference="YFQ-HN-itg"/>
         <segue reference="6Xh-Oi-X12"/>
     </inferredMetricsTieBreakers>

@@ -32,6 +32,7 @@
 		DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CCC2157ADD500365AD1 /* Owner_loginViewController.swift */; };
 		DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */; };
 		DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */; };
+		F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		DAA35CCC2157ADD500365AD1 /* Owner_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_loginViewController.swift; sourceTree = SOURCE_ROOT; };
+		F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_AddEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */,
 				DA10C3062169D66E0009FA70 /* VisitorTableViewCell.swift */,
 				DA10C3072169D66E0009FA70 /* VisitorTableViewCell.xib */,
 				DA10C2FE21691B3A0009FA70 /* ParticipantTableViewCell.swift */,
@@ -469,6 +472,7 @@
 				DA10C3032169CDD00009FA70 /* visitors.swift in Sources */,
 				DAA35CC02154E41C00365AD1 /* Owner registration view.swift in Sources */,
 				DA718F3621502DF500839FA5 /* ViewController.swift in Sources */,
+				F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */,
 				DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */,
 				DA10C2F521652E850009FA70 /* participants.swift in Sources */,
 				DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */,
