@@ -10,6 +10,16 @@ import UIKit
 
 class VisitorTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var first_name: UILabel!
+    @IBOutlet weak var last_name: UILabel!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var phone: UILabel!
+    @IBOutlet weak var gender: UILabel!
+    @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var email: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -402,6 +402,9 @@
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="13"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Logout?"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="CNA-cu-RWT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShibakTathaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-NC-z7R">
                                 <rect key="frame" x="26" y="45" width="103" height="17"/>
@@ -414,17 +417,24 @@
                                 <rect key="frame" x="3" y="42" width="23" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="oXl-OG-Ybg">
-                                <rect key="frame" x="338" y="46" width="27" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddW-v2-eNU">
                                 <rect key="frame" x="336" y="43" width="30" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Wau-Oa-vNl" kind="show" id="cba-HA-KEw"/>
+                                    <segue destination="GgA-go-vYg" kind="show" id="b6n-0M-L55"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="oXl-OG-Ybg">
+                                <rect key="frame" x="338" y="46" width="27" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visitor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppD-FK-Da6">
+                                <rect key="frame" x="144" y="282" width="87" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="N5H-6K-Z9E"/>
@@ -461,7 +471,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAV-XU-VzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2799.1999999999998" y="1743.778110944528"/>
+            <point key="canvasLocation" x="3738.4000000000001" y="1743.778110944528"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -850,6 +860,7 @@
                                 <connections>
                                     <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="55N-ky-N8X"/>
                                     <action selector="Visitor_login:" destination="adS-DP-myg" eventType="touchUpInside" id="V3W-Rl-x9c"/>
+                                    <segue destination="fJ2-sK-U80" kind="show" identifier="VisitorLoginHP" id="Pzf-kP-teq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBY-d7-ac9">
@@ -1013,6 +1024,7 @@
                                 <connections>
                                     <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="7S5-2L-C7H"/>
                                     <action selector="VisitorRegistration:" destination="LDY-43-sGN" eventType="touchUpInside" id="Don-oT-Xp5"/>
+                                    <segue destination="fJ2-sK-U80" kind="show" identifier="VisitorRegistrationHP" id="NUT-JU-1kL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1150,25 +1162,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxc-Ol-SYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1686" y="1720"/>
+            <point key="canvasLocation" x="-1687" y="1719"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="qa5-7z-LKg">
+        <scene sceneID="d4m-Gf-p3I">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wau-Oa-vNl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GgA-go-vYg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FBo-Ut-i5j">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Zh-e2-mjc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="3r5-oD-24G" kind="relationship" relationship="rootViewController" id="IuG-w9-WK8"/>
+                        <segue destination="3r5-oD-24G" kind="relationship" relationship="rootViewController" id="dWD-Gd-cIT"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J4n-FM-CL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjo-jJ-cUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860" y="1743.778110944528"/>
+            <point key="canvasLocation" x="2799.1999999999998" y="1743.778110944528"/>
         </scene>
     </scenes>
     <resources>
@@ -1186,7 +1198,9 @@
         <segue reference="zRQ-J4-Czd"/>
         <segue reference="Ul5-2d-V8i"/>
         <segue reference="492-nQ-s9Y"/>
-        <segue reference="WTx-sy-he7"/>
+        <segue reference="CNA-cu-RWT"/>
+        <segue reference="NUT-JU-1kL"/>
+        <segue reference="xhc-oc-XWG"/>
         <segue reference="wfM-Ka-mWR"/>
         <segue reference="YFQ-HN-itg"/>
         <segue reference="6Xh-Oi-X12"/>

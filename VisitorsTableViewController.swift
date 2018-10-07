@@ -35,7 +35,7 @@ class VisitorsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let cellNib = UINib(nibName: "VisitorsTableViewController", bundle: nil)
+        let cellNib = UINib(nibName: "VisitorTableViewCell", bundle: nil)
         self.tableView.register(cellNib, forCellReuseIdentifier: "cellV")
         
         //opening the database
@@ -96,13 +96,25 @@ class VisitorsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellV", for: indexPath)
+        let cellV = tableView.dequeueReusableCell(withIdentifier: "cellV", for: indexPath) as! VisitorTableViewCell
 
         // Configure the cell...
         
+        cellV.first_name.text = first_name
+        cellV.last_name.text = last_name
+        cellV.username.text = username
+        cellV.gender.text = gender
+        cellV.email.text = email
+        cellV.phone.text = String(phone)
+        cellV.age.text = String(age)
+        
         
 
-        return cell
+        return cellV
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 421
     }
     
 
