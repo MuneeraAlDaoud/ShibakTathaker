@@ -22,6 +22,10 @@ class Owner_registration_view: UIViewController {
     var OwnerRUn = ""
     
     
+    @IBOutlet weak var errorPW: UILabel!
+    @IBOutlet weak var errorUN: UILabel!
+    @IBOutlet weak var errorPN: UILabel!
+    @IBOutlet weak var errorE: UILabel!
     
     @IBAction func Owner_registration(_ sender: Any) {
         //getting values from textfields
@@ -40,7 +44,6 @@ class Owner_registration_view: UIViewController {
             textFieldOwner_username.layer.masksToBounds = true
             textFieldOwner_username.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOwner_username.layer.borderWidth = 2.0
-           
         }
         else {
             textFieldOwner_username.layer.cornerRadius = 8.0
@@ -57,22 +60,19 @@ class Owner_registration_view: UIViewController {
             textFieldOwner_password.layer.masksToBounds = true
             textFieldOwner_password.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOwner_password.layer.borderWidth = 2.0
-          
         }
         
         else if((Owner_password?.count)!<8) {
-            
-            
+            errorPW.isHidden = false
+            errorPW.text = "* password must be at least 8 characters"
         }
         
         else{
-            
+            errorPW.isHidden = true
             textFieldOwner_password.layer.cornerRadius = 8.0
             textFieldOwner_password.layer.masksToBounds = true
             textFieldOwner_password.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
             textFieldOwner_password.layer.borderWidth = 2.0
-            
-            
         }
         
         
@@ -83,7 +83,6 @@ class Owner_registration_view: UIViewController {
             textFieldOrganization_name.layer.masksToBounds = true
             textFieldOrganization_name.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOrganization_name.layer.borderWidth = 2.0
-          
         }
         
         else {
@@ -91,6 +90,30 @@ class Owner_registration_view: UIViewController {
             textFieldOrganization_name.layer.masksToBounds = true
             textFieldOrganization_name.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
             textFieldOrganization_name.layer.borderWidth = 2.0
+            
+        }
+
+        if(Owner_phone?.isEmpty)!{
+            textFieldOwner_phone.layer.borderColor = UIColor.red.cgColor
+            
+            textFieldOwner_phone.layer.cornerRadius = 8.0
+            textFieldOwner_phone.layer.masksToBounds = true
+            textFieldOwner_phone.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
+            textFieldOwner_phone.layer.borderWidth = 2.0
+            
+            
+        }  else if((Owner_phone?.count)! != 9) {
+            errorPN.isHidden = false
+            errorPN.text = "* please enter a valid phone number"
+            
+        }
+            
+        else {
+            errorPN.isHidden = true
+            textFieldOwner_phone.layer.cornerRadius = 8.0
+            textFieldOwner_phone.layer.masksToBounds = true
+            textFieldOwner_phone.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
+            textFieldOwner_phone.layer.borderWidth = 2.0
             
         }
         
@@ -101,33 +124,19 @@ class Owner_registration_view: UIViewController {
             textFieldOwner_email.layer.masksToBounds = true
             textFieldOwner_email.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOwner_email.layer.borderWidth = 2.0
-            
+            return
+        }
+        else if !((Owner_email?.contains("@"))! && ((Owner_email?.contains("."))!)) {
+            errorE.isHidden = false
+            errorE.text = "*  plaese enter a valid email"
+            return
         }
         else {
+            errorE.isHidden = true
             textFieldOwner_email.layer.cornerRadius = 8.0
             textFieldOwner_email.layer.masksToBounds = true
             textFieldOwner_email.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
             textFieldOwner_email.layer.borderWidth = 2.0
-            
-        }
-
-        
-        if(Owner_phone?.isEmpty)!{
-            textFieldOwner_phone.layer.borderColor = UIColor.red.cgColor
-            
-            textFieldOwner_phone.layer.cornerRadius = 8.0
-            textFieldOwner_phone.layer.masksToBounds = true
-            textFieldOwner_phone.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
-            textFieldOwner_phone.layer.borderWidth = 2.0
-            
-            
-            return
-        }
-        else {
-            textFieldOwner_phone.layer.cornerRadius = 8.0
-            textFieldOwner_phone.layer.masksToBounds = true
-            textFieldOwner_phone.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
-            textFieldOwner_phone.layer.borderWidth = 2.0
             
         }
         
@@ -183,6 +192,8 @@ class Owner_registration_view: UIViewController {
         if sqlite3_step(stmt) != SQLITE_DONE {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure inserting owner: \(errmsg)")
+            errorUN.isHidden = false
+            errorUN.text = "name already existes"
             return
         }
         
@@ -215,9 +226,15 @@ class Owner_registration_view: UIViewController {
     
     
  override func viewDidLoad() {
-    super.viewDidLoad()
-   
+      super.viewDidLoad()
+    
+    errorE.isHidden = true
+    errorPN.isHidden = true
+    errorPW.isHidden = true
+    errorUN.isHidden = true
+    
 
+   
     
    let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
      .appendingPathComponent("ShibakTathaker.sqlite")

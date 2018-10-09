@@ -16,7 +16,11 @@ class Visitor_loginViewController: UIViewController {
     @IBOutlet weak var textFieldVisitor_username: UITextField!
     @IBOutlet weak var textFieldVisitor_password: UITextField!
     
+<<<<<<< HEAD
     var VisitorUn=""
+=======
+    @IBOutlet weak var error: UILabel!
+>>>>>>> 5c6aa6624988b643f58520623752943a3acfb039
     
     @IBAction func Visitor_login(_ sender: Any) {
         
@@ -96,14 +100,20 @@ class Visitor_loginViewController: UIViewController {
         
         //displaying a success message
         if(flag)
-        {print("Logged-in succesfully")
+        {
+            
+            
+            print("Logged-in succesfully")
             
             self.VisitorUn = textFieldVisitor_username.text!
             self.performSegue(withIdentifier: "VisitorLoginHP", sender: self)
             
         }
             
-        else {print("sorry , username or password is wrong")}
+        else {
+            error.isHidden = false
+            error.text = "* sorry, username or password is incorrect"
+            print("sorry , username or password is wrong")}
         
         //emptying the textfields
         textFieldVisitor_username.text=""
@@ -123,6 +133,7 @@ class Visitor_loginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        error.isHidden = true
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("ShibakTathaker.sqlite")
         

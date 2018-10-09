@@ -17,6 +17,7 @@ class Owner_loginViewController: UIViewController {
     @IBOutlet weak var textFieldOwner_username: UITextField!
     @IBOutlet weak var textFieldOwner_password: UITextField!
     
+    @IBOutlet weak var error: UILabel!
     
     @IBAction func Owner_login(_ sender: Any) {
        
@@ -101,7 +102,10 @@ class Owner_loginViewController: UIViewController {
             self.performSegue(withIdentifier: "ownerLoginHP", sender: self)
         }
             
-        else {print("sorry , username or password is wrong ")}
+        else {
+            error.isHidden = false
+            error.text = "* sorry, username or password is wrong"
+            print("sorry , username or password is wrong ")}
         
         //emptying the textfields
         textFieldOwner_username.text=""
@@ -116,6 +120,7 @@ class Owner_loginViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        error.isHidden = true
         super.viewDidLoad()
 
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
