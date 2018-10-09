@@ -24,7 +24,7 @@ class VisitorsTableViewController: UITableViewController {
     var phone = 0
     var email = ""
     
-    
+    var VisitorUn2 = ""
     
     let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
         .appendingPathComponent("ShibakTathaker.sqlite")
@@ -72,6 +72,10 @@ class VisitorsTableViewController: UITableViewController {
             email = String(cString: sqlite3_column_text(stmt, 7))
             
             visitorsList.append(visitors(username: String(describing: username),email: String(describing: email),first_name: String(describing: first_name), last_name: String(describing: last_name),gender: String(describing: gender),age: Int(age),phone: Int64(phone)))
+            
+            if(username == VisitorUn2)
+            {break; }
+            
         }
 
 
@@ -91,7 +95,7 @@ class VisitorsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return visitorsList.count 
+        return 1
     }
 
     

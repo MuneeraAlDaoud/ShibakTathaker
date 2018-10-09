@@ -13,6 +13,7 @@ import SQLite3
 class Participant_registration: UIViewController {
     
     var db: OpaquePointer?
+    var ParticipantRUn = ""
 
     @IBOutlet weak var textFieldParticipant_username: UITextField!
     @IBOutlet weak var textFieldOrganization_name: UITextField!
@@ -219,10 +220,17 @@ class Participant_registration: UIViewController {
         
         //displaying a success message
         print("Participant registered successfully")
+        
+        self.ParticipantRUn = textFieldParticipant_username.text!
         self.performSegue(withIdentifier: "ParticipantRegisterHP", sender: self)
         sqlite3_reset(stmt)
         sqlite3_finalize(stmt)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ParticipantHPViewController
+        vc.ParticipantUn1 = self.ParticipantRUn
     }
     
    
@@ -252,7 +260,7 @@ class Participant_registration: UIViewController {
         let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         print(paths[0])
        
-       
+    
         
         
         // Do any additional setup after loading the view.

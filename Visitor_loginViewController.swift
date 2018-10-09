@@ -16,7 +16,7 @@ class Visitor_loginViewController: UIViewController {
     @IBOutlet weak var textFieldVisitor_username: UITextField!
     @IBOutlet weak var textFieldVisitor_password: UITextField!
     
-    
+    var VisitorUn=""
     
     @IBAction func Visitor_login(_ sender: Any) {
         
@@ -98,6 +98,7 @@ class Visitor_loginViewController: UIViewController {
         if(flag)
         {print("Logged-in succesfully")
             
+            self.VisitorUn = textFieldVisitor_username.text!
             self.performSegue(withIdentifier: "VisitorLoginHP", sender: self)
             
         }
@@ -111,6 +112,11 @@ class Visitor_loginViewController: UIViewController {
         
         
     }//end visitor login
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! VIsitorHPViewController
+        vc.VisitorUn1 = self.VisitorUn 
+    }
     
     
     

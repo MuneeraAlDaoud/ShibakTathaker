@@ -15,6 +15,7 @@ class Participant_loginViewController: UIViewController {
 
     var db: OpaquePointer?
   
+    var ParticipantUn = ""
     
     @IBOutlet weak var textFieldParticipant_username: UITextField!
     @IBOutlet weak var textFieldParticipant_password: UITextField!
@@ -113,6 +114,7 @@ class Participant_loginViewController: UIViewController {
         if(flag)
         {print("Logged-in succesfully")
          
+            self.ParticipantUn = textFieldParticipant_username.text!
             
             
             self.performSegue(withIdentifier: "ParticipantLoginHP" ,sender: self)
@@ -127,6 +129,11 @@ class Participant_loginViewController: UIViewController {
         
         
     }//end participant login
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ParticipantHPViewController
+        vc.ParticipantUn1 = self.ParticipantUn 
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

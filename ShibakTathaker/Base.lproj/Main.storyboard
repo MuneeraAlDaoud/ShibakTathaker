@@ -294,6 +294,13 @@
                                 <rect key="frame" x="16" y="23" width="19" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="con-X6-vCB">
+                                <rect key="frame" x="17" y="18" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Lcw-ky-WXz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56470588239999997" green="0.81568627449999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="HAZ-eX-30B"/>
@@ -303,10 +310,10 @@
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--ParticipantHP View Controller-->
         <scene sceneID="TRv-U1-cQc">
             <objects>
-                <viewController id="Xnu-ws-vhg" sceneMemberID="viewController">
+                <viewController id="Xnu-ws-vhg" customClass="ParticipantHPViewController" customModule="ShibakTathaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OWh-49-uT0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -340,7 +347,8 @@
                                 <rect key="frame" x="337" y="45" width="30" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="y2X-mR-djp" kind="show" id="TPl-PF-vbe"/>
+                                    <action selector="ParticipantProfile:" destination="Xnu-ws-vhg" eventType="touchUpInside" id="tHs-TX-n44"/>
+                                    <segue destination="y2X-mR-djp" kind="show" identifier="ParticipantProfile" id="TPl-PF-vbe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Participant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01u-xA-Sfb">
@@ -388,10 +396,10 @@
             </objects>
             <point key="canvasLocation" x="-18" y="1744"/>
         </scene>
-        <!--View Controller-->
+        <!--IsitorHP View Controller-->
         <scene sceneID="yib-e7-QZG">
             <objects>
-                <viewController id="fJ2-sK-U80" sceneMemberID="viewController">
+                <viewController id="fJ2-sK-U80" customClass="VIsitorHPViewController" customModule="ShibakTathaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Taj-Fb-rOD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,7 +429,8 @@
                                 <rect key="frame" x="336" y="43" width="30" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="GgA-go-vYg" kind="show" id="b6n-0M-L55"/>
+                                    <action selector="ProfileButton:" destination="fJ2-sK-U80" eventType="touchUpInside" id="WdU-0J-yKs"/>
+                                    <segue destination="GgA-go-vYg" kind="show" identifier="VisitorProfile" id="b6n-0M-L55"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="oXl-OG-Ybg">
@@ -509,6 +518,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5jF-zL-Pq6" kind="show" id="LJg-V1-i4S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -594,6 +606,13 @@
                                 <rect key="frame" x="16" y="23" width="19" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkB-hZ-mJ9">
+                                <rect key="frame" x="13" y="18" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="X1v-Cy-Ejm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56470588239999997" green="0.81568627449999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="KEy-Gb-ZeO"/>
@@ -675,6 +694,7 @@
                                 <connections>
                                     <action selector="Owner_registration:" destination="4DJ-Wt-i6K" eventType="touchUpInside" id="71r-Pv-9Uj"/>
                                     <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="cwO-wd-l39"/>
+                                    <segue destination="Ug8-NG-gKT" kind="show" identifier="ownerRegistrationHP" id="xSO-ah-dAS"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5xxxxxxxx" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-R0-XkY">
@@ -723,6 +743,103 @@
                 <exit id="Ebw-WA-SMs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1829.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--OwnerHP View Controller-->
+        <scene sceneID="fxD-4M-zYS">
+            <objects>
+                <viewController id="Ug8-NG-gKT" customClass="OwnerHPViewController" customModule="ShibakTathaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fum-46-ijN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2A-br-LAP">
+                                <rect key="frame" x="215" y="20" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="13"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Logout?"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0Fs-eQ-ZXN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="vMP-o8-Oa4">
+                                <rect key="frame" x="338" y="27" width="27" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShibakTathaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEx-MS-L40">
+                                <rect key="frame" x="26" y="26" width="103" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vt-57-MOM">
+                                <rect key="frame" x="336" y="24" width="30" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="OwnerProfile:" destination="Ug8-NG-gKT" eventType="touchUpInside" id="EZO-qp-GUn"/>
+                                    <segue destination="WBe-W9-ux8" kind="show" identifier="OwnerProfile" id="EFq-kb-28L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UK9-Tb-pqb">
+                                <rect key="frame" x="144" y="263" width="92" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ticket-window" translatesAutoresizingMaskIntoConstraints="NO" id="Wo5-gc-iu7">
+                                <rect key="frame" x="3" y="23" width="23" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-H9-tyl">
+                                <rect key="frame" x="132" y="333" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.43137254899999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="tintColor" red="1" green="0.97701674419999995" blue="0.98560439639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Add Event"/>
+                                <connections>
+                                    <segue destination="bKZ-rs-NQN" kind="show" id="BJu-Pt-Ubs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="H37-mI-oa4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lx-Zk-uJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799" y="134"/>
+        </scene>
+        <!--Owner Table View Controller-->
+        <scene sceneID="VZs-3D-m9J">
+            <objects>
+                <tableViewController id="dmR-DL-FpQ" customClass="OwnerTableViewController" customModule="ShibakTathaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rwT-1R-99K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellO" id="2cm-8U-XXm">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2cm-8U-XXm" id="U8i-aX-I2M">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dmR-DL-FpQ" id="xK4-Z6-VgP"/>
+                            <outlet property="delegate" destination="dmR-DL-FpQ" id="UJA-Il-pCG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="0eX-mk-9Qv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHF-de-XeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4633" y="156"/>
         </scene>
         <!--Owner login View Controller-->
         <scene sceneID="jUo-TK-d6P">
@@ -783,7 +900,7 @@
                                 <connections>
                                     <action selector="Owner_login:" destination="T4d-5R-kEF" eventType="touchUpInside" id="nra-9e-Uly"/>
                                     <action selector="RegisterOwner:" destination="Ebw-WA-SMs" eventType="touchUpInside" id="jhF-ee-mYy"/>
-                                    <segue destination="bKZ-rs-NQN" kind="show" id="v8P-c3-Koa"/>
+                                    <segue destination="Ug8-NG-gKT" kind="show" identifier="ownerLoginHP" id="NLH-mC-GX8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-tN-ASd">
@@ -1245,7 +1362,7 @@
                                 <rect key="frame" x="43" y="270" width="277" height="127"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="560585066.14826298">
-                                    <!--2018-10-07 06:04:26 +0000-->
+                                    <!--1440-01-27 06:04:26 +0000-->
                                 </date>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-po-V5V">
@@ -1276,35 +1393,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpO-NS-XSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.60000000000002" y="-626.53673163418296"/>
+            <point key="canvasLocation" x="2798" y="-636"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UWP-kv-DGn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WBe-W9-ux8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yPc-t9-wG6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dmR-DL-FpQ" kind="relationship" relationship="rootViewController" id="c2M-qV-L5Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhL-uI-Jne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3695" y="156"/>
         </scene>
     </scenes>
     <resources>
-        <image name="amusement-park (1)" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="back" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="amusement-park (1)" width="512" height="512"/>
+        <image name="back" width="512" height="512"/>
         <image name="login-frameFIXED" width="2177" height="2409"/>
-        <image name="magician (1)" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="menu" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="roller-coaster (1)" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="magician (1)" width="512" height="512"/>
+        <image name="menu" width="512" height="512"/>
+        <image name="roller-coaster (1)" width="512" height="512"/>
         <image name="ticket (2)" width="789" height="643"/>
-        <image name="ticket-window" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="ticket-window" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fcF-lx-mwB"/>
-        <segue reference="zRQ-J4-Czd"/>
-        <segue reference="Ul5-2d-V8i"/>
-<<<<<<< HEAD
+        <segue reference="GqG-2I-9fK"/>
+        <segue reference="68B-XW-0YL"/>
+        <segue reference="c90-KH-rOT"/>
+        <segue reference="NLH-mC-GX8"/>
         <segue reference="492-nQ-s9Y"/>
-        <segue reference="CNA-cu-RWT"/>
+        <segue reference="yhd-2o-wQL"/>
+        <segue reference="Lcw-ky-WXz"/>
         <segue reference="NUT-JU-1kL"/>
         <segue reference="xhc-oc-XWG"/>
-        <segue reference="wfM-Ka-mWR"/>
-=======
-        <segue reference="voH-bW-U1t"/>
-        <segue reference="WTx-sy-he7"/>
-        <segue reference="sDL-ls-K7Y"/>
->>>>>>> 18e7e348ee1d980e087734cc0c302bfa5d6a2743
-        <segue reference="YFQ-HN-itg"/>
+        <segue reference="nkr-ZW-pRf"/>
+        <segue reference="jgJ-1C-hGE"/>
         <segue reference="6Xh-Oi-X12"/>
     </inferredMetricsTieBreakers>
 </document>

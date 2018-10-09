@@ -12,6 +12,7 @@ import SQLite3
 class Visitor_registration: UIViewController {
 
     var db: OpaquePointer?
+    var VisitorRUn = ""
 
     
     @IBOutlet weak var textFieldFirst_name: UITextField!
@@ -271,6 +272,7 @@ class Visitor_registration: UIViewController {
         //displaying a success message
         print("Visitor registered successfully")
         
+        self.VisitorRUn = textFieldVisitor_username.text!
         self.performSegue(withIdentifier: "VisitorRegistrationHP", sender: self)
         
         sqlite3_reset(stmt)
@@ -278,6 +280,11 @@ class Visitor_registration: UIViewController {
         
         
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! VIsitorHPViewController
+        vc.VisitorUn1 = self.VisitorRUn
     }
     
     

@@ -15,6 +15,13 @@
 		DA10C3052169CF760009FA70 /* VisitorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C3042169CF760009FA70 /* VisitorsTableViewController.swift */; };
 		DA10C3082169D66E0009FA70 /* VisitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C3062169D66E0009FA70 /* VisitorTableViewCell.swift */; };
 		DA10C3092169D66E0009FA70 /* VisitorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA10C3072169D66E0009FA70 /* VisitorTableViewCell.xib */; };
+		DA10C30F216A6CB80009FA70 /* owners.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C30E216A6CB80009FA70 /* owners.swift */; };
+		DA10C32A216CF0530009FA70 /* OwnerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C329216CF0530009FA70 /* OwnerTableViewController.swift */; };
+		DA10C32D216CF1A70009FA70 /* OwnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C32B216CF1A70009FA70 /* OwnerTableViewCell.swift */; };
+		DA10C32E216CF1A70009FA70 /* OwnerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA10C32C216CF1A70009FA70 /* OwnerTableViewCell.xib */; };
+		DA10C330216CFE570009FA70 /* VIsitorHPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C32F216CFE570009FA70 /* VIsitorHPViewController.swift */; };
+		DA10C332216D07600009FA70 /* ParticipantHPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C331216D07600009FA70 /* ParticipantHPViewController.swift */; };
+		DA10C334216D0AC30009FA70 /* OwnerHPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C333216D0AC30009FA70 /* OwnerHPViewController.swift */; };
 		DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */; };
 		DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3321502DF500839FA5 /* AppDelegate.swift */; };
 		DA718F3621502DF500839FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3521502DF500839FA5 /* ViewController.swift */; };
@@ -132,6 +139,13 @@
 		DA10C3042169CF760009FA70 /* VisitorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA10C3062169D66E0009FA70 /* VisitorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DA10C3072169D66E0009FA70 /* VisitorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		DA10C30E216A6CB80009FA70 /* owners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = owners.swift; sourceTree = SOURCE_ROOT; };
+		DA10C329216CF0530009FA70 /* OwnerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C32B216CF1A70009FA70 /* OwnerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		DA10C32C216CF1A70009FA70 /* OwnerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OwnerTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		DA10C32F216CFE570009FA70 /* VIsitorHPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIsitorHPViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C331216D07600009FA70 /* ParticipantHPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantHPViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C333216D0AC30009FA70 /* OwnerHPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerHPViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA718F3021502DF500839FA5 /* ShibakTathaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShibakTathaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA718F3321502DF500839FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +225,11 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				DA10C333216D0AC30009FA70 /* OwnerHPViewController.swift */,
+				DA10C331216D07600009FA70 /* ParticipantHPViewController.swift */,
+				DA10C32F216CFE570009FA70 /* VIsitorHPViewController.swift */,
+				DA10C329216CF0530009FA70 /* OwnerTableViewController.swift */,
+				DA10C30E216A6CB80009FA70 /* owners.swift */,
 				F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */,
 				DA10C3062169D66E0009FA70 /* VisitorTableViewCell.swift */,
 				DA10C3072169D66E0009FA70 /* VisitorTableViewCell.xib */,
@@ -220,6 +239,8 @@
 				DA10C3022169CDD00009FA70 /* visitors.swift */,
 				DA10C3042169CF760009FA70 /* VisitorsTableViewController.swift */,
 				DA10C2FC21690EE30009FA70 /* ParticipantsTableViewController.swift */,
+				DA10C32B216CF1A70009FA70 /* OwnerTableViewCell.swift */,
+				DA10C32C216CF1A70009FA70 /* OwnerTableViewCell.xib */,
 				DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */,
 				DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */,
 				DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */,
@@ -444,6 +465,7 @@
 				DA718F3921502DF500839FA5 /* Main.storyboard in Resources */,
 				DA10C30121691B3A0009FA70 /* ParticipantTableViewCell.xib in Resources */,
 				DA10C3092169D66E0009FA70 /* VisitorTableViewCell.xib in Resources */,
+				DA10C32E216CF1A70009FA70 /* OwnerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,12 +491,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA10C3082169D66E0009FA70 /* VisitorTableViewCell.swift in Sources */,
+				DA10C32D216CF1A70009FA70 /* OwnerTableViewCell.swift in Sources */,
 				DA10C3032169CDD00009FA70 /* visitors.swift in Sources */,
+				DA10C330216CFE570009FA70 /* VIsitorHPViewController.swift in Sources */,
 				DAA35CC02154E41C00365AD1 /* Owner registration view.swift in Sources */,
 				DA718F3621502DF500839FA5 /* ViewController.swift in Sources */,
 				F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */,
 				DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */,
 				DA10C2F521652E850009FA70 /* participants.swift in Sources */,
+				DA10C332216D07600009FA70 /* ParticipantHPViewController.swift in Sources */,
+				DA10C30F216A6CB80009FA70 /* owners.swift in Sources */,
 				DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */,
 				DA10C3052169CF760009FA70 /* VisitorsTableViewController.swift in Sources */,
 				DAA35CCA21557DED00365AD1 /* Visitor_registration.swift in Sources */,
@@ -482,8 +508,10 @@
 				DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */,
 				DA10C2FD21690EE30009FA70 /* ParticipantsTableViewController.swift in Sources */,
 				DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */,
+				DA10C334216D0AC30009FA70 /* OwnerHPViewController.swift in Sources */,
 				DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */,
 				DA10C30021691B3A0009FA70 /* ParticipantTableViewCell.swift in Sources */,
+				DA10C32A216CF0530009FA70 /* OwnerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

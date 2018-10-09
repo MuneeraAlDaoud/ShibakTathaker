@@ -19,6 +19,8 @@ class Owner_registration_view: UIViewController {
     @IBOutlet weak var textFieldOwner_email: UITextField!
     @IBOutlet weak var textFieldOwner_password: UITextField!
     
+    var OwnerRUn = ""
+    
     
     
     @IBAction func Owner_registration(_ sender: Any) {
@@ -199,10 +201,16 @@ class Owner_registration_view: UIViewController {
         
         //displaying a success message
         print("Owner registered successfully")
+        self.OwnerRUn = textFieldOwner_username.text!
         self.performSegue(withIdentifier: "ownerRegistrationHP", sender: self)
         sqlite3_reset(stmt)
         sqlite3_finalize(stmt)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! OwnerHPViewController
+        vc.OwnerUn1 = self.OwnerRUn 
     }
     
     

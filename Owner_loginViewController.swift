@@ -12,6 +12,7 @@ import SQLite3
 class Owner_loginViewController: UIViewController {
     
     var db: OpaquePointer?
+    var OwnerUn = ""
 
     @IBOutlet weak var textFieldOwner_username: UITextField!
     @IBOutlet weak var textFieldOwner_password: UITextField!
@@ -96,6 +97,7 @@ class Owner_loginViewController: UIViewController {
         //displaying a success message
         if(flag)
         {print("Logged-in succesfully")
+            self.OwnerUn = textFieldOwner_username.text!
             self.performSegue(withIdentifier: "ownerLoginHP", sender: self)
         }
             
@@ -106,6 +108,11 @@ class Owner_loginViewController: UIViewController {
         textFieldOwner_password.text=""
         
         }//end Owner_login
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! OwnerHPViewController
+        vc.OwnerUn1 = self.OwnerUn 
+    }
     
     
     override func viewDidLoad() {
@@ -118,6 +125,12 @@ class Owner_loginViewController: UIViewController {
         if sqlite3_open(fileURL.path, &db) != SQLITE_OK {
             print("error opening database")
         }
+        
+        
+        
+      
+        
+     
        
         
         
