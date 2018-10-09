@@ -1663,7 +1663,7 @@
         <image name="ticket-window" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
+
         <segue reference="GqG-2I-9fK"/>
         <segue reference="68B-XW-0YL"/>
         <segue reference="c90-KH-rOT"/>
@@ -1676,7 +1676,7 @@
         <segue reference="nkr-ZW-pRf"/>
         <segue reference="jgJ-1C-hGE"/>
         <segue reference="6Xh-Oi-X12"/>
-=======
+
         <segue reference="fcF-lx-mwB"/>
         <segue reference="zRQ-J4-Czd"/>
         <segue reference="Ul5-2d-V8i"/>

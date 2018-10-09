@@ -14,13 +14,13 @@ import SQLite3
 class Participant_loginViewController: UIViewController {
 
     var db: OpaquePointer?
-<<<<<<< HEAD
+
   
     var ParticipantUn = ""
-=======
+
  
     @IBOutlet weak var error: UILabel!
->>>>>>> 5c6aa6624988b643f58520623752943a3acfb039
+5c6aa6624988b643f58520623752943a3acfb039
     
     @IBOutlet weak var textFieldParticipant_username: UITextField!
     @IBOutlet weak var textFieldParticipant_password: UITextField!

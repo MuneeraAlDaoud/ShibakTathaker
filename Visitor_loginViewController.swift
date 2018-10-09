@@ -16,11 +16,10 @@ class Visitor_loginViewController: UIViewController {
     @IBOutlet weak var textFieldVisitor_username: UITextField!
     @IBOutlet weak var textFieldVisitor_password: UITextField!
     
-<<<<<<< HEAD
     var VisitorUn=""
-=======
+
     @IBOutlet weak var error: UILabel!
->>>>>>> 5c6aa6624988b643f58520623752943a3acfb039
+ 5c6aa6624988b643f58520623752943a3acfb039
     
     @IBAction func Visitor_login(_ sender: Any) {
         
