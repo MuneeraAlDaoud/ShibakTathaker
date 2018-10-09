@@ -21,6 +21,9 @@ class Participant_registration: UIViewController {
     @IBOutlet weak var textFieldParticipant_activityType: UITextField!
     @IBOutlet weak var textFieldParticipant_password: UITextField!
     
+    @IBOutlet weak var errorPW: UILabel!
+    @IBOutlet weak var errorPN: UILabel!
+    @IBOutlet weak var errorE: UILabel!
     
     @IBAction func Participant_registration(_ sender: Any) {
         
@@ -59,9 +62,13 @@ class Participant_registration: UIViewController {
             textFieldParticipant_password.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_password.layer.borderWidth = 2.0
             
+        }    else if((Participant_password?.count)!<8) {
+            errorPW.isHidden = false
+            errorPW.text = "* password must be at least 8 characters"
         }
         
         else {
+            errorPW.isHidden = true
             textFieldParticipant_password.layer.cornerRadius = 8.0
             textFieldParticipant_password.layer.masksToBounds = true
             textFieldParticipant_password.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
@@ -93,10 +100,16 @@ class Participant_registration: UIViewController {
             textFieldParticipant_email.layer.masksToBounds = true
             textFieldParticipant_email.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_email.layer.borderWidth = 2.0
+            return
            
+        }   else if !((Participant_email?.contains("@"))! && ((Participant_email?.contains("."))!)) {
+            errorE.isHidden = false
+            errorE.text = "*  plaese enter a valid email"
+            return
         }
         
         else {
+            errorE.isHidden = true
             textFieldParticipant_email.layer.cornerRadius = 8.0
             textFieldParticipant_email.layer.masksToBounds = true
             textFieldParticipant_email.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
@@ -112,8 +125,13 @@ class Participant_registration: UIViewController {
             textFieldParticipant_phone.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_phone.layer.borderWidth = 2.0
             
-        }
+        }   else if((Participant_phone?.count)! != 9) {
+    errorPN.isHidden = false
+    errorPN.text = "* please enter a valid phone number"
+    
+    }
         else {
+             errorPN.isHidden = true
             textFieldParticipant_phone.layer.cornerRadius = 8.0
             textFieldParticipant_phone.layer.masksToBounds = true
             textFieldParticipant_phone.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
@@ -228,11 +246,16 @@ class Participant_registration: UIViewController {
    
     
     
-    
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        errorE.isHidden = true
+        errorPN.isHidden = true
+        errorPW.isHidden = true
+        
         
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("ShibakTathaker.sqlite")

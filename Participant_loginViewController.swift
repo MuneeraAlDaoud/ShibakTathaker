@@ -14,7 +14,8 @@ import SQLite3
 class Participant_loginViewController: UIViewController {
 
     var db: OpaquePointer?
-  
+ 
+    @IBOutlet weak var error: UILabel!
     
     @IBOutlet weak var textFieldParticipant_username: UITextField!
     @IBOutlet weak var textFieldParticipant_password: UITextField!
@@ -119,7 +120,11 @@ class Participant_loginViewController: UIViewController {
             
         }
             
-        else {print("sorry , username or password is wrong")}
+        else {
+            error.isHidden = false
+            error.text = " * sorry, username or password is incorrect"
+            
+            print("sorry , username or password is wrong")}
         
         //emptying the textfields
         textFieldParticipant_username.text=""
@@ -129,6 +134,7 @@ class Participant_loginViewController: UIViewController {
     }//end participant login
     
     override func viewDidLoad() {
+        error.isHidden = true
         super.viewDidLoad()
 
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
