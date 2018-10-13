@@ -20,7 +20,7 @@ class Participant_loginViewController: UIViewController {
 
  
     @IBOutlet weak var error: UILabel!
-5c6aa6624988b643f58520623752943a3acfb039
+
     
     @IBOutlet weak var textFieldParticipant_username: UITextField!
     @IBOutlet weak var textFieldParticipant_password: UITextField!
@@ -120,8 +120,6 @@ class Participant_loginViewController: UIViewController {
         {print("Logged-in succesfully")
          
             self.ParticipantUn = textFieldParticipant_username.text!
-            
-            
             self.performSegue(withIdentifier: "ParticipantLoginHP" ,sender: self)
             
         }
@@ -136,12 +134,15 @@ class Participant_loginViewController: UIViewController {
         textFieldParticipant_username.text=""
         textFieldParticipant_password.text=""
         
+        sqlite3_reset(stmt)
+        sqlite3_finalize(stmt)
         
     }//end participant login
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if segue.identifier == "ParticipantLoginHP" {
         let vc = segue.destination as! ParticipantHPViewController
-        vc.ParticipantUn1 = self.ParticipantUn 
+            vc.ParticipantUn1 = self.ParticipantUn }
     }
     
     override func viewDidLoad() {

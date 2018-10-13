@@ -247,8 +247,9 @@ class Participant_registration: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ParticipantRegisterHP" {
         let vc = segue.destination as! ParticipantHPViewController
-        vc.ParticipantUn1 = self.ParticipantRUn
+            vc.ParticipantUn1 = self.ParticipantRUn}
     }
     
    

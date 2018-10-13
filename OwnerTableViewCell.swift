@@ -19,6 +19,7 @@ class OwnerTableViewCell: UITableViewCell {
     
     @IBOutlet weak var phone: UILabel!
     
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

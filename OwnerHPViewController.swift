@@ -20,9 +20,11 @@ class OwnerHPViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
+        if segue.identifier == "OwnerProfile" {
+        
         let nav = segue.destination as! UINavigationController
         let svc = nav.topViewController as! OwnerTableViewController
-        svc.OwnerUn2 = self.OwnerUn1
+            svc.OwnerUn2 = self.OwnerUn1}
         
     }
     

@@ -21,9 +21,11 @@ class ParticipantHPViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+         if segue.identifier == "ParticipantProfile"{
+        
         let nav = segue.destination as! UINavigationController
         let svc = nav.topViewController as! ParticipantsTableViewController
-        svc.ParticipantUn2 = self.ParticipantUn1
+            svc.ParticipantUn2 = self.ParticipantUn1}
         
     }
     

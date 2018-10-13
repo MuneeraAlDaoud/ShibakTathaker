@@ -220,8 +220,9 @@ class Owner_registration_view: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ownerRegistrationHP" {
         let vc = segue.destination as! OwnerHPViewController
-        vc.OwnerUn1 = self.OwnerRUn 
+            vc.OwnerUn1 = self.OwnerRUn }
     }
     
     

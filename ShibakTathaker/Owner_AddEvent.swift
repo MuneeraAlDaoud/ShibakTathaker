@@ -17,6 +17,7 @@ class AddEventViewController: UIViewController {
     
     var db: OpaquePointer?
     
+    @IBOutlet weak var EventAdded: UILabel!
     @IBOutlet weak var textFieldEvent_pictureUrl: UITextField!
     @IBOutlet weak var textFieldEvent_name: UITextField!
     @IBOutlet weak var textFieldEvent_location: UITextField!
@@ -367,11 +368,15 @@ class AddEventViewController: UIViewController {
         //displaying a success message
         print("Event added successfully")
         // self.performSegue(withIdentifier: "ownerRegistrationHP", sender: self)
+         EventAdded.isHidden = false
         sqlite3_reset(stmt)
         sqlite3_finalize(stmt)
         
+      
+       
+ 
     }
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -393,6 +398,8 @@ class AddEventViewController: UIViewController {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error creating table: \(errmsg)")
         }
+        
+        EventAdded.isHidden = true
         
         
         

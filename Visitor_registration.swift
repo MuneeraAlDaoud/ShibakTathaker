@@ -305,8 +305,9 @@ class Visitor_registration: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "VisitorRegistrationHP"{
         let vc = segue.destination as! VIsitorHPViewController
-        vc.VisitorUn1 = self.VisitorRUn
+            vc.VisitorUn1 = self.VisitorRUn}
     }
     
     

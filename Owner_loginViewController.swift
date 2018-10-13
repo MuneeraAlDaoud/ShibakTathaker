@@ -13,14 +13,14 @@ class Owner_loginViewController: UIViewController {
     
     var db: OpaquePointer?
     var OwnerUn = ""
-
+    
     @IBOutlet weak var textFieldOwner_username: UITextField!
     @IBOutlet weak var textFieldOwner_password: UITextField!
     
     @IBOutlet weak var error: UILabel!
     
     @IBAction func Owner_login(_ sender: Any) {
-       
+        
         let Owner_username = textFieldOwner_username.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let Owner_password = textFieldOwner_password.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -89,10 +89,7 @@ class Owner_loginViewController: UIViewController {
             if((Owner_username==username) && (Owner_password==password)) {flag=true}
             
             
-            
-            
         
-            
         }
         
         //displaying a success message
@@ -105,24 +102,32 @@ class Owner_loginViewController: UIViewController {
         else {
             error.isHidden = false
             error.text = "* sorry, username or password is wrong"
-            print("sorry , username or password is wrong ")}
+            print("sorry , username or password is wrong ")
+            
+        }
         
         //emptying the textfields
         textFieldOwner_username.text=""
         textFieldOwner_password.text=""
+        sqlite3_reset(stmt)
+        sqlite3_finalize(stmt)
         
-        }//end Owner_login
+    }//end Owner_login
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ownerLoginHP" {
         let vc = segue.destination as! OwnerHPViewController
-        vc.OwnerUn1 = self.OwnerUn 
+            vc.OwnerUn1 = self.OwnerUn }
     }
     
     
     override func viewDidLoad() {
-        error.isHidden = true
         super.viewDidLoad()
-
+         error.isHidden = true
+        
+       
+        
+        
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("ShibakTathaker.sqlite")
         
@@ -133,10 +138,10 @@ class Owner_loginViewController: UIViewController {
         
         
         
-      
         
-     
-       
+        
+        
+        
         
         
         // Do any additional setup after loading the view.
@@ -144,15 +149,15 @@ class Owner_loginViewController: UIViewController {
         
     }//end viewDidLoad
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }//end class

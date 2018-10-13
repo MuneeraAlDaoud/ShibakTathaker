@@ -20,10 +20,10 @@ class VIsitorHPViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-       
+        if segue.identifier == "VisitorProfile"{
         let nav = segue.destination as! UINavigationController
         let svc = nav.topViewController as! VisitorsTableViewController
-        svc.VisitorUn2 = self.VisitorUn1
+            svc.VisitorUn2 = self.VisitorUn1}
         
     }
     

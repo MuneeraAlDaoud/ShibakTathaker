@@ -19,7 +19,7 @@ class Visitor_loginViewController: UIViewController {
     var VisitorUn=""
 
     @IBOutlet weak var error: UILabel!
- 5c6aa6624988b643f58520623752943a3acfb039
+
     
     @IBAction func Visitor_login(_ sender: Any) {
         
@@ -118,13 +118,16 @@ class Visitor_loginViewController: UIViewController {
         textFieldVisitor_username.text=""
         textFieldVisitor_password.text=""
         
+        sqlite3_reset(stmt)
+        sqlite3_finalize(stmt)
         
         
     }//end visitor login
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "VisitorLoginHP" {
         let vc = segue.destination as! VIsitorHPViewController
-        vc.VisitorUn1 = self.VisitorUn 
+            vc.VisitorUn1 = self.VisitorUn }
     }
     
     
