@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 import SQLite3
 
-class AddEventViewController: UIViewController {
+class AddEventViewController: UIViewController, UITextFieldDelegate {
     
     
     
@@ -381,6 +381,13 @@ class AddEventViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.textFieldEvent_name.delegate = self
+        self.textFieldEvent_type.delegate = self
+        self.textFieldEvent_location.delegate = self
+        self.textFieldEvent_pictureUrl.delegate = self
+        
+        
        // errorLabel?.isHidden = true
         
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -406,7 +413,18 @@ class AddEventViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldEvent_pictureUrl.resignFirstResponder()
+        textFieldEvent_location.resignFirstResponder()
+        textFieldEvent_type.resignFirstResponder()
+        textFieldEvent_name.resignFirstResponder()
+        
+        return true
+    }
     
     
     

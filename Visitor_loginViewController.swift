@@ -9,7 +9,7 @@
 import UIKit
 import SQLite3
 
-class Visitor_loginViewController: UIViewController {
+class Visitor_loginViewController: UIViewController, UITextFieldDelegate {
 
     var db: OpaquePointer?
     
@@ -134,6 +134,9 @@ class Visitor_loginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textFieldVisitor_username.delegate = self
+        self.textFieldVisitor_password.delegate = self
 
         error.isHidden = true
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -147,6 +150,17 @@ class Visitor_loginViewController: UIViewController {
         
        
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldVisitor_username.resignFirstResponder()
+        textFieldVisitor_password.resignFirstResponder()
+        
+        return true
     }
     
    

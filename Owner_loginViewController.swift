@@ -9,7 +9,7 @@
 import UIKit
 import SQLite3
 
-class Owner_loginViewController: UIViewController {
+class Owner_loginViewController: UIViewController, UITextFieldDelegate {
     
     var db: OpaquePointer?
     var OwnerUn = ""
@@ -125,7 +125,9 @@ class Owner_loginViewController: UIViewController {
         super.viewDidLoad()
          error.isHidden = true
         
-       
+        self.textFieldOwner_username.delegate = self
+        self.textFieldOwner_password.delegate = self
+
         
         
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -143,11 +145,21 @@ class Owner_loginViewController: UIViewController {
         
         
         
-        
         // Do any additional setup after loading the view.
         
         
     }//end viewDidLoad
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldOwner_username.resignFirstResponder()
+        textFieldOwner_password.resignFirstResponder()
+        
+        return true
+    }
     
     
     /*

@@ -10,7 +10,7 @@ import UIKit
 import SQLite3
 
 
-class Participant_registration: UIViewController {
+class Participant_registration: UIViewController, UITextFieldDelegate {
     
     var db: OpaquePointer?
     var ParticipantRUn = ""
@@ -25,6 +25,10 @@ class Participant_registration: UIViewController {
     @IBOutlet weak var errorPW: UILabel!
     @IBOutlet weak var errorPN: UILabel!
     @IBOutlet weak var errorE: UILabel!
+    
+    var validE = false
+    var validP = false
+    var validPwd = false
     
     @IBAction func Participant_registration(_ sender: Any) {
         
@@ -67,7 +71,7 @@ class Participant_registration: UIViewController {
             errorPW.isHidden = false
             errorPW.text = "* password must be at least 8 characters"
         }
-        
+            
         else {
             errorPW.isHidden = true
             textFieldParticipant_password.layer.cornerRadius = 8.0
@@ -102,13 +106,13 @@ class Participant_registration: UIViewController {
             textFieldParticipant_email.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_email.layer.borderWidth = 2.0
             return
-           
+            
         }   else if !((Participant_email?.contains("@"))! && ((Participant_email?.contains("."))!)) {
             errorE.isHidden = false
             errorE.text = "*  plaese enter a valid email"
             return
         }
-        
+            
         else {
             errorE.isHidden = true
             textFieldParticipant_email.layer.cornerRadius = 8.0
@@ -127,12 +131,12 @@ class Participant_registration: UIViewController {
             textFieldParticipant_phone.layer.borderWidth = 2.0
             
         }   else if((Participant_phone?.count)! != 9) {
-    errorPN.isHidden = false
-    errorPN.text = "* please enter a valid phone number"
-    
-    }
+            errorPN.isHidden = false
+            errorPN.text = "* please enter a valid phone number"
+            
+        }
         else {
-             errorPN.isHidden = true
+            errorPN.isHidden = true
             textFieldParticipant_phone.layer.cornerRadius = 8.0
             textFieldParticipant_phone.layer.masksToBounds = true
             textFieldParticipant_phone.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
@@ -151,7 +155,7 @@ class Participant_registration: UIViewController {
             
             return
         }
-        
+            
         else {
             textFieldParticipant_activityType.layer.cornerRadius = 8.0
             textFieldParticipant_activityType.layer.masksToBounds = true
@@ -160,7 +164,7 @@ class Participant_registration: UIViewController {
             
         }
         
-
+        
         
         //creating a statement
         var stmt: OpaquePointer?
@@ -182,33 +186,33 @@ class Participant_registration: UIViewController {
             print("failure binding username: \(errmsg)")
             return
         }
-      
+        
         
         if sqlite3_bind_text(stmt, 2, Participant_password, -1, SQLITE_TRANSIENT) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding password: \(errmsg)")
             return
         }
-     
+        
         if sqlite3_bind_text(stmt, 3, Organization_name, -1, SQLITE_TRANSIENT) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding organization name: \(errmsg)")
             return
         }
-      
+        
         if sqlite3_bind_text(stmt, 4, Participant_activityType, -1, SQLITE_TRANSIENT) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding participant activity type: \(errmsg)")
             return
         }
-     
+        
         if sqlite3_bind_text(stmt, 5, Participant_email, -1, SQLITE_TRANSIENT) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding owner email: \(errmsg)")
             return
         }
-    
-      
+        
+        
         
         if sqlite3_bind_int(stmt, 6, (Participant_phone! as NSString).intValue) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
@@ -216,7 +220,7 @@ class Participant_registration: UIViewController {
             return
         }
         
-       
+        
         //executing the query to insert values
         if sqlite3_step(stmt) != SQLITE_DONE {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
@@ -248,11 +252,11 @@ class Participant_registration: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ParticipantRegisterHP" {
-        let vc = segue.destination as! ParticipantHPViewController
+            let vc = segue.destination as! ParticipantHPViewController
             vc.ParticipantUn1 = self.ParticipantRUn}
     }
     
-   
+    
     
     
 
@@ -260,6 +264,13 @@ class Participant_registration: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textFieldParticipant_username.delegate = self
+        self.textFieldParticipant_password.delegate = self
+        self.textFieldOrganization_name.delegate = self
+        self.textFieldParticipant_email.delegate = self
+        self.textFieldParticipant_phone.delegate = self
+        self.textFieldParticipant_activityType.delegate = self
         
         errorE.isHidden = true
         errorPN.isHidden = true
@@ -280,11 +291,10 @@ class Participant_registration: UIViewController {
             print("error creating table: \(errmsg)")
         }
         
-        
-        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
-        print(paths[0])
        
-    
+        
+        
+
         
         
         // Do any additional setup after loading the view.
@@ -301,4 +311,19 @@ class Participant_registration: UIViewController {
     }
     */
 
-}
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }//end viewDidLoad
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldParticipant_username.resignFirstResponder()
+        textFieldParticipant_password.resignFirstResponder()
+        textFieldParticipant_activityType.resignFirstResponder()
+        textFieldParticipant_phone.resignFirstResponder()
+        textFieldParticipant_email.resignFirstResponder()
+        textFieldOrganization_name.resignFirstResponder()
+        
+        return true
+    }
+    
+}//end class

@@ -9,7 +9,7 @@
 import UIKit
 import SQLite3
 
-class Visitor_registration: UIViewController {
+class Visitor_registration: UIViewController, UITextFieldDelegate {
 
     var db: OpaquePointer?
     var VisitorRUn = ""
@@ -315,6 +315,16 @@ class Visitor_registration: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         self.textFieldFirst_name.delegate = self
+         self.textFieldLast_name.delegate = self
+         self.textFieldVisitor_username.delegate = self
+         self.textFieldVisitor_password.delegate = self
+         self.textFieldGender.delegate = self
+         self.textFieldVisitor_phone.delegate = self
+         self.textFieldVisitor_email.delegate = self
+         self.textFieldVisitor_age.delegate = self
+        
+        
         errorE.isHidden = true
         errorPN.isHidden = true
         errorPW.isHidden = true
@@ -338,6 +348,23 @@ class Visitor_registration: UIViewController {
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldFirst_name.resignFirstResponder()
+        textFieldLast_name.resignFirstResponder()
+        textFieldVisitor_username.resignFirstResponder()
+        textFieldVisitor_age.resignFirstResponder()
+        textFieldVisitor_email.resignFirstResponder()
+        textFieldVisitor_phone.resignFirstResponder()
+        textFieldGender.resignFirstResponder()
+        textFieldVisitor_password.resignFirstResponder()
+        
+        return true
     }
     
 

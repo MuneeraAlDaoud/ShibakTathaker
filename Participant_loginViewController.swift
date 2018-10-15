@@ -11,7 +11,7 @@ import SQLite3
 
 
 
-class Participant_loginViewController: UIViewController {
+class Participant_loginViewController: UIViewController, UITextFieldDelegate {
 
     var db: OpaquePointer?
 
@@ -148,6 +148,8 @@ class Participant_loginViewController: UIViewController {
     override func viewDidLoad() {
         error.isHidden = true
         super.viewDidLoad()
+        self.textFieldParticipant_username.delegate = self
+        self.textFieldParticipant_password.delegate = self
 
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("ShibakTathaker.sqlite")
@@ -160,7 +162,18 @@ class Participant_loginViewController: UIViewController {
         // Do any additional setup after loading the view.
         
 
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }//end viewDidLoad
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldParticipant_username.resignFirstResponder()
+        textFieldParticipant_password.resignFirstResponder()
+        
+        return true
+    }
     
 
     /*

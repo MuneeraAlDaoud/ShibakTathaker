@@ -22,9 +22,10 @@ class OwnerHPViewController: UIViewController {
         
         if segue.identifier == "OwnerProfile" {
         
-        let nav = segue.destination as! UINavigationController
-        let svc = nav.topViewController as! OwnerTableViewController
-            svc.OwnerUn2 = self.OwnerUn1}
+            let vc = segue.destination as! OwnerProfileViewController
+            vc.OwnerUn2 = self.OwnerUn1
+
+        }
         
     }
     

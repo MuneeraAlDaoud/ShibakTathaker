@@ -9,7 +9,7 @@
 import UIKit
 import SQLite3
 
-class Owner_registration_view: UIViewController {
+class Owner_registration_view: UIViewController, UITextFieldDelegate {
     
     var db: OpaquePointer?
 
@@ -229,6 +229,12 @@ class Owner_registration_view: UIViewController {
  override func viewDidLoad() {
       super.viewDidLoad()
     
+    self.textFieldOwner_username.delegate = self
+    self.textFieldOwner_password.delegate = self
+    self.textFieldOrganization_name.delegate = self
+    self.textFieldOwner_email.delegate = self
+    self.textFieldOwner_phone.delegate = self
+    
     errorE.isHidden = true
     errorPN.isHidden = true
     errorPW.isHidden = true
@@ -256,6 +262,21 @@ class Owner_registration_view: UIViewController {
   
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }//end viewDidLoad
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldOwner_username.resignFirstResponder()
+        textFieldOwner_password.resignFirstResponder()
+        textFieldOwner_phone.resignFirstResponder()
+        textFieldOwner_email.resignFirstResponder()
+        textFieldOrganization_name.resignFirstResponder()
+    
+        
+        return true
     }
     
 
