@@ -142,7 +142,9 @@ class Owner_loginViewController: UIViewController, UITextFieldDelegate {
         
         
         
-        
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+        print(paths[0])
+
         
         
         // Do any additional setup after loading the view.

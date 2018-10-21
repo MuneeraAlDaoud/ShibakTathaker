@@ -40,6 +40,13 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
         let Participant_phone = textFieldParticipant_phone.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let Participant_activityType = textFieldParticipant_activityType.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        var Uflag = true
+        var Pflag = true
+        var Oflag = true
+        var Eflag = true
+        var Phflag = true
+        var Aflag = true
+        
         
         //validating that values are not empty
         if(Participant_username?.isEmpty)!{
@@ -49,6 +56,7 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
             textFieldParticipant_username.layer.masksToBounds = true
             textFieldParticipant_username.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_username.layer.borderWidth = 2.0
+            Uflag = false
             
         }
         else {
@@ -67,9 +75,13 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
             textFieldParticipant_password.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_password.layer.borderWidth = 2.0
             
+            Pflag = false
+            
         }    else if((Participant_password?.count)!<8) {
             errorPW.isHidden = false
             errorPW.text = "* password must be at least 8 characters"
+            
+            Pflag = false
         }
             
         else {
@@ -89,6 +101,8 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
             textFieldOrganization_name.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOrganization_name.layer.borderWidth = 2.0
             
+            Oflag = false
+            
         }
         else {
             textFieldOrganization_name.layer.cornerRadius = 8.0
@@ -105,12 +119,15 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
             textFieldParticipant_email.layer.masksToBounds = true
             textFieldParticipant_email.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_email.layer.borderWidth = 2.0
-            return
+            
+            Eflag = false
+            
             
         }   else if !((Participant_email?.contains("@"))! && ((Participant_email?.contains("."))!)) {
             errorE.isHidden = false
             errorE.text = "*  plaese enter a valid email"
-            return
+            
+            Eflag = false
         }
             
         else {
@@ -130,9 +147,13 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
             textFieldParticipant_phone.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_phone.layer.borderWidth = 2.0
             
+            Phflag = false
+            
         }   else if((Participant_phone?.count)! != 9) {
             errorPN.isHidden = false
             errorPN.text = "* please enter a valid phone number"
+            
+            Phflag = false
             
         }
         else {
@@ -152,8 +173,8 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
             textFieldParticipant_activityType.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldParticipant_activityType.layer.borderWidth = 2.0
             
+            Aflag = false
             
-            return
         }
             
         else {
@@ -164,7 +185,15 @@ class Participant_registration: UIViewController, UITextFieldDelegate {
             
         }
         
+        if !(Uflag && Pflag && Phflag && Oflag && Eflag && Aflag)
+        {return}
         
+        Uflag = true
+        Pflag = true
+        Oflag = true
+        Phflag = true
+        Eflag = true
+        Aflag = true
         
         //creating a statement
         var stmt: OpaquePointer?

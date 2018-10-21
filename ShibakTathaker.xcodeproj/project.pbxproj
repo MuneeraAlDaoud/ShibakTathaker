@@ -25,6 +25,10 @@
 		DA10C3432173ABE50009FA70 /* ParticipantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C3422173ABE50009FA70 /* ParticipantProfileViewController.swift */; };
 		DA10C34B2173B7520009FA70 /* VisitorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C34A2173B7520009FA70 /* VisitorProfileViewController.swift */; };
 		DA10C34D2173C0740009FA70 /* OwnerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C34C2173C0740009FA70 /* OwnerProfileViewController.swift */; };
+		DA10C351217855C50009FA70 /* ViewEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C350217855C50009FA70 /* ViewEventsViewController.swift */; };
+		DA10C35921785C7D0009FA70 /* events.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C35821785C7D0009FA70 /* events.swift */; };
+		DA10C360217CFDBF0009FA70 /* ViewEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10C35E217CFDBF0009FA70 /* ViewEventsTableViewCell.swift */; };
+		DA10C361217CFDBF0009FA70 /* ViewEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA10C35F217CFDBF0009FA70 /* ViewEventsTableViewCell.xib */; };
 		DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */; };
 		DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3321502DF500839FA5 /* AppDelegate.swift */; };
 		DA718F3621502DF500839FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA718F3521502DF500839FA5 /* ViewController.swift */; };
@@ -152,6 +156,10 @@
 		DA10C3422173ABE50009FA70 /* ParticipantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA10C34A2173B7520009FA70 /* VisitorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorProfileViewController.swift; sourceTree = "<group>"; };
 		DA10C34C2173C0740009FA70 /* OwnerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C350217855C50009FA70 /* ViewEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEventsViewController.swift; sourceTree = SOURCE_ROOT; };
+		DA10C35821785C7D0009FA70 /* events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = events.swift; sourceTree = SOURCE_ROOT; };
+		DA10C35E217CFDBF0009FA70 /* ViewEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEventsTableViewCell.swift; sourceTree = "<group>"; };
+		DA10C35F217CFDBF0009FA70 /* ViewEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewEventsTableViewCell.xib; sourceTree = "<group>"; };
 		DA488087216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_forgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		DA718F3021502DF500839FA5 /* ShibakTathaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShibakTathaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA718F3321502DF500839FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -231,6 +239,10 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				DA10C35E217CFDBF0009FA70 /* ViewEventsTableViewCell.swift */,
+				DA10C35F217CFDBF0009FA70 /* ViewEventsTableViewCell.xib */,
+				DA10C350217855C50009FA70 /* ViewEventsViewController.swift */,
+				DA10C35821785C7D0009FA70 /* events.swift */,
 				DA10C34A2173B7520009FA70 /* VisitorProfileViewController.swift */,
 				DA10C3422173ABE50009FA70 /* ParticipantProfileViewController.swift */,
 				DA10C333216D0AC30009FA70 /* OwnerHPViewController.swift */,
@@ -473,6 +485,7 @@
 				DA718F3B21502DF600839FA5 /* Assets.xcassets in Resources */,
 				DA718F3921502DF500839FA5 /* Main.storyboard in Resources */,
 				DA10C30121691B3A0009FA70 /* ParticipantTableViewCell.xib in Resources */,
+				DA10C361217CFDBF0009FA70 /* ViewEventsTableViewCell.xib in Resources */,
 				DA10C3092169D66E0009FA70 /* VisitorTableViewCell.xib in Resources */,
 				DA10C32E216CF1A70009FA70 /* OwnerTableViewCell.xib in Resources */,
 			);
@@ -503,8 +516,10 @@
 				DA10C32D216CF1A70009FA70 /* OwnerTableViewCell.swift in Sources */,
 				DA10C3032169CDD00009FA70 /* visitors.swift in Sources */,
 				DA10C330216CFE570009FA70 /* VIsitorHPViewController.swift in Sources */,
+				DA10C351217855C50009FA70 /* ViewEventsViewController.swift in Sources */,
 				DAA35CC02154E41C00365AD1 /* Owner registration view.swift in Sources */,
 				DA718F3621502DF500839FA5 /* ViewController.swift in Sources */,
+				DA10C360217CFDBF0009FA70 /* ViewEventsTableViewCell.swift in Sources */,
 				F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */,
 				DA488088216268C900D1FEB3 /* Participant_forgotPasswordViewController.swift in Sources */,
 				DA10C2F521652E850009FA70 /* participants.swift in Sources */,
@@ -519,6 +534,7 @@
 				DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */,
 				DA10C34B2173B7520009FA70 /* VisitorProfileViewController.swift in Sources */,
 				DA10C2FD21690EE30009FA70 /* ParticipantsTableViewController.swift in Sources */,
+				DA10C35921785C7D0009FA70 /* events.swift in Sources */,
 				DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */,
 				DA10C334216D0AC30009FA70 /* OwnerHPViewController.swift in Sources */,
 				DA718F3421502DF500839FA5 /* AppDelegate.swift in Sources */,

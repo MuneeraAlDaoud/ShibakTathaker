@@ -40,6 +40,14 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
         let Visitor_email = textFieldVisitor_email.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let Visitor_age = textFieldVisitor_age.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        var Fflag = true
+        var Lflag = true
+        var Uflag = true
+        var Pflag = true
+        var Gflag = true
+        var Eflag = true
+        var Phflag = true
+        var Aflag = true
         
         //validating that values are not empty
         if(Visitor_FirstName?.isEmpty)!{
@@ -49,6 +57,8 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldFirst_name.layer.masksToBounds = true
             textFieldFirst_name.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldFirst_name.layer.borderWidth = 2.0
+            
+            Fflag = false
             
         }
         else {
@@ -67,6 +77,7 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldLast_name.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldLast_name.layer.borderWidth = 2.0
             
+            Lflag = false
         }
         
         else {
@@ -85,6 +96,7 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldVisitor_username.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldVisitor_username.layer.borderWidth = 2.0
             
+            Uflag = false
         }
         else {
             textFieldVisitor_username.layer.cornerRadius = 8.0
@@ -102,9 +114,13 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldVisitor_password.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldVisitor_password.layer.borderWidth = 2.0
             
+            Pflag = false
+            
         }   else if((Visitor_password?.count)!<8) {
             errorPW.isHidden = false
             errorPW.text = "* password must be at least 8 characters"
+            
+            Pflag = false
         }
             
         else {
@@ -124,6 +140,8 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldGender.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldGender.layer.borderWidth = 2.0
             
+            Gflag = false
+            
         }
         
         else {
@@ -142,9 +160,13 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldVisitor_phone.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldVisitor_phone.layer.borderWidth = 2.0
             
+            Phflag = false
+            
         }   else if((Visitor_phone?.count)! != 9) {
             errorPN.isHidden = false
             errorPN.text = "* please enter a valid phone number"
+            
+            Phflag = false
             
         }
         else {
@@ -164,10 +186,14 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldVisitor_email.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldVisitor_email.layer.borderWidth = 2.0
             
+            Eflag = false
+            
         }   else if !((Visitor_email?.contains("@"))! && ((Visitor_email?.contains("."))!)) {
             errorE.isHidden = false
             errorE.text = "*  plaese enter a valid email"
-            return
+            
+            Eflag = false
+//            return
         }
             
         else {
@@ -187,8 +213,10 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             textFieldVisitor_age.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldVisitor_age.layer.borderWidth = 2.0
             
+            Aflag = false
             
-            return
+            
+            
         }
         else {
             textFieldVisitor_age.layer.cornerRadius = 8.0
@@ -198,7 +226,17 @@ class Visitor_registration: UIViewController, UITextFieldDelegate {
             
         }
         
+        if !(Fflag && Lflag && Uflag && Pflag && Eflag && Phflag && Gflag && Aflag)
+        {return}
         
+        Fflag = true
+        Lflag = true
+        Uflag = true
+        Pflag = true
+        Aflag = true
+        Phflag = true
+        Eflag = true
+        Gflag = true
         
         //creating a statement
         var stmt: OpaquePointer?

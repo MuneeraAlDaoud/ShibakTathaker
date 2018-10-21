@@ -35,6 +35,14 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
         let Owner_email = textFieldOwner_email.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let Owner_phone = textFieldOwner_phone.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        let string_phone  = Owner_phone
+        let num = Int(string_phone!)
+        
+        var Uflag = true
+        var Pflag = true
+        var Oflag = true
+        var Eflag = true
+        var Phflag = true
         
         //validating that values are not empty
         if(Owner_username?.isEmpty)!{
@@ -44,12 +52,15 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
             textFieldOwner_username.layer.masksToBounds = true
             textFieldOwner_username.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOwner_username.layer.borderWidth = 2.0
+           Uflag = false
         }
         else {
             textFieldOwner_username.layer.cornerRadius = 8.0
             textFieldOwner_username.layer.masksToBounds = true
             textFieldOwner_username.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
             textFieldOwner_username.layer.borderWidth = 2.0
+            
+           
             
         }
         
@@ -60,11 +71,14 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
             textFieldOwner_password.layer.masksToBounds = true
             textFieldOwner_password.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOwner_password.layer.borderWidth = 2.0
+             Pflag = false
         }
         
         else if((Owner_password?.count)!<8) {
             errorPW.isHidden = false
             errorPW.text = "* password must be at least 8 characters"
+            
+         Pflag = false
         }
         
         else{
@@ -73,25 +87,12 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
             textFieldOwner_password.layer.masksToBounds = true
             textFieldOwner_password.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
             textFieldOwner_password.layer.borderWidth = 2.0
-        }
-        
-        
-        if(Organization_name?.isEmpty)!{
-            textFieldOrganization_name.layer.borderColor = UIColor.red.cgColor
             
-            textFieldOrganization_name.layer.cornerRadius = 8.0
-            textFieldOrganization_name.layer.masksToBounds = true
-            textFieldOrganization_name.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
-            textFieldOrganization_name.layer.borderWidth = 2.0
+           
         }
         
-        else {
-            textFieldOrganization_name.layer.cornerRadius = 8.0
-            textFieldOrganization_name.layer.masksToBounds = true
-            textFieldOrganization_name.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
-            textFieldOrganization_name.layer.borderWidth = 2.0
-            
-        }
+        
+      
 
         if(Owner_phone?.isEmpty)!{
             textFieldOwner_phone.layer.borderColor = UIColor.red.cgColor
@@ -100,12 +101,14 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
             textFieldOwner_phone.layer.masksToBounds = true
             textFieldOwner_phone.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOwner_phone.layer.borderWidth = 2.0
+         Phflag = false
+          
             
-            
-        }  else if((Owner_phone?.count)! != 9) {
+        }else if(((Owner_phone?.count)! != 9) && (num != nil)) {
             errorPN.isHidden = false
             errorPN.text = "* please enter a valid phone number"
-            
+        
+            Phflag = false
         }
             
         else {
@@ -114,6 +117,8 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
             textFieldOwner_phone.layer.masksToBounds = true
             textFieldOwner_phone.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
             textFieldOwner_phone.layer.borderWidth = 2.0
+            
+           
             
         }
         
@@ -124,12 +129,14 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
             textFieldOwner_email.layer.masksToBounds = true
             textFieldOwner_email.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
             textFieldOwner_email.layer.borderWidth = 2.0
-            return
+            Eflag = false
         }
         else if !((Owner_email?.contains("@"))! && ((Owner_email?.contains("."))!)) {
             errorE.isHidden = false
             errorE.text = "*  plaese enter a valid email"
-            return
+            
+            Eflag = false
+           
         }
         else {
             errorE.isHidden = true
@@ -138,7 +145,42 @@ class Owner_registration_view: UIViewController, UITextFieldDelegate {
             textFieldOwner_email.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
             textFieldOwner_email.layer.borderWidth = 2.0
             
+           
+            
         }
+        
+        if(Organization_name?.isEmpty)!{
+            textFieldOrganization_name.layer.borderColor = UIColor.red.cgColor
+            
+            textFieldOrganization_name.layer.cornerRadius = 8.0
+            textFieldOrganization_name.layer.masksToBounds = true
+            textFieldOrganization_name.layer.borderColor = UIColor( red: 255/255, green: 0/255, blue:0/255, alpha: 1.0 ).cgColor
+            textFieldOrganization_name.layer.borderWidth = 2.0
+            
+            Oflag = false
+            
+        }
+            
+        else {
+            textFieldOrganization_name.layer.cornerRadius = 8.0
+            textFieldOrganization_name.layer.masksToBounds = true
+            textFieldOrganization_name.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).cgColor
+            textFieldOrganization_name.layer.borderWidth = 2.0
+            
+            
+        }
+        
+        if !(Uflag && Pflag && Oflag && Phflag && Eflag)
+        {
+           return
+            
+        }
+        
+        Uflag = true
+        Pflag = true
+        Oflag = true
+        Phflag = true
+        Eflag = true
         
         
         //creating a statement
