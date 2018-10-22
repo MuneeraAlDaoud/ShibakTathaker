@@ -46,6 +46,7 @@
 		DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CCC2157ADD500365AD1 /* Owner_loginViewController.swift */; };
 		DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */; };
 		DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */; };
+		F0AB289E217D063D001E1431 /* Owner_EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB289D217D063D001E1431 /* Owner_EditProfileViewController.swift */; };
 		F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */; };
 /* End PBXBuildFile section */
 
@@ -181,6 +182,7 @@
 		DAA35CCC2157ADD500365AD1 /* Owner_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_loginViewController.swift; sourceTree = SOURCE_ROOT; };
+		F0AB289D217D063D001E1431 /* Owner_EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_EditProfileViewController.swift; sourceTree = "<group>"; };
 		F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_AddEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +241,7 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				F0AB289D217D063D001E1431 /* Owner_EditProfileViewController.swift */,
 				DA10C35E217CFDBF0009FA70 /* ViewEventsTableViewCell.swift */,
 				DA10C35F217CFDBF0009FA70 /* ViewEventsTableViewCell.xib */,
 				DA10C350217855C50009FA70 /* ViewEventsViewController.swift */,
@@ -529,6 +532,7 @@
 				DA10C3432173ABE50009FA70 /* ParticipantProfileViewController.swift in Sources */,
 				DA10C3052169CF760009FA70 /* VisitorsTableViewController.swift in Sources */,
 				DAA35CCA21557DED00365AD1 /* Visitor_registration.swift in Sources */,
+				F0AB289E217D063D001E1431 /* Owner_EditProfileViewController.swift in Sources */,
 				DA10C34D2173C0740009FA70 /* OwnerProfileViewController.swift in Sources */,
 				DAA35CC82154FEED00365AD1 /* Participant_registration.swift in Sources */,
 				DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */,

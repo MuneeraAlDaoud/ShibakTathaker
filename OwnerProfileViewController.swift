@@ -27,7 +27,7 @@ class OwnerProfileViewController: UIViewController {
     
     var OwnerUn2 = ""
     
-    
+   
     
     let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
         .appendingPathComponent("ShibakTathaker.sqlite")
@@ -86,8 +86,15 @@ class OwnerProfileViewController: UIViewController {
         Oorganization_name.text = organization_name
         Ophone.text = String(phone)
         Oemail.text = email
+        sqlite3_reset(stmt)
+        sqlite3_finalize(stmt)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "OwnerEditProfileHP" {
+            let vc = segue.destination as! Owner_EditProfileViewController
+            vc.OwnerUn3 = self.OwnerUn2 }
+    }
 
     /*
     // MARK: - Navigation
