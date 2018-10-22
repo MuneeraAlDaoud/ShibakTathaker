@@ -47,6 +47,7 @@
 		DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */; };
 		DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */; };
 		F0AB289E217D063D001E1431 /* Owner_EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB289D217D063D001E1431 /* Owner_EditProfileViewController.swift */; };
+		F0AB28A0217E5FE9001E1431 /* Visitor_EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB289F217E5FE9001E1431 /* Visitor_EditProfileViewController.swift */; };
 		F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +184,7 @@
 		DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		F0AB289D217D063D001E1431 /* Owner_EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_EditProfileViewController.swift; sourceTree = "<group>"; };
+		F0AB289F217E5FE9001E1431 /* Visitor_EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor_EditProfileViewController.swift; sourceTree = "<group>"; };
 		F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_AddEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +240,7 @@
 		DA718F3221502DF500839FA5 /* ShibakTathaker */ = {
 			isa = PBXGroup;
 			children = (
+				F0AB289F217E5FE9001E1431 /* Visitor_EditProfileViewController.swift */,
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
@@ -528,6 +531,7 @@
 				DA10C2F521652E850009FA70 /* participants.swift in Sources */,
 				DA10C332216D07600009FA70 /* ParticipantHPViewController.swift in Sources */,
 				DA10C30F216A6CB80009FA70 /* owners.swift in Sources */,
+				F0AB28A0217E5FE9001E1431 /* Visitor_EditProfileViewController.swift in Sources */,
 				DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */,
 				DA10C3432173ABE50009FA70 /* ParticipantProfileViewController.swift in Sources */,
 				DA10C3052169CF760009FA70 /* VisitorsTableViewController.swift in Sources */,

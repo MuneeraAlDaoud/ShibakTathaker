@@ -94,8 +94,14 @@ class VisitorProfileViewController: UIViewController {
         Vemail.text = email
         Vphone.text = String(phone)
         Vage.text = String(age)
+        sqlite3_reset(stmt)
+        sqlite3_finalize(stmt)
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "VisitorEditProfileHP" {
+            let vc = segue.destination as! Visitor_EditProfileViewController
+            vc.VisitorUn3 = self.VisitorUn2 }
+    }
     
 
     /*
