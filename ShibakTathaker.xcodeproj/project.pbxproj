@@ -48,6 +48,7 @@
 		DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */; };
 		F0AB289E217D063D001E1431 /* Owner_EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB289D217D063D001E1431 /* Owner_EditProfileViewController.swift */; };
 		F0AB28A0217E5FE9001E1431 /* Visitor_EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB289F217E5FE9001E1431 /* Visitor_EditProfileViewController.swift */; };
+		F0AB28A3217F3DBB001E1431 /* Participant_EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB28A2217F3DBB001E1431 /* Participant_EditViewController.swift */; };
 		F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +186,7 @@
 		DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		F0AB289D217D063D001E1431 /* Owner_EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_EditProfileViewController.swift; sourceTree = "<group>"; };
 		F0AB289F217E5FE9001E1431 /* Visitor_EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor_EditProfileViewController.swift; sourceTree = "<group>"; };
+		F0AB28A2217F3DBB001E1431 /* Participant_EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_EditViewController.swift; sourceTree = "<group>"; };
 		F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_AddEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				F0AB289F217E5FE9001E1431 /* Visitor_EditProfileViewController.swift */,
+				F0AB28A2217F3DBB001E1431 /* Participant_EditViewController.swift */,
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
@@ -518,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0AB28A3217F3DBB001E1431 /* Participant_EditViewController.swift in Sources */,
 				DA10C3082169D66E0009FA70 /* VisitorTableViewCell.swift in Sources */,
 				DA10C32D216CF1A70009FA70 /* OwnerTableViewCell.swift in Sources */,
 				DA10C3032169CDD00009FA70 /* visitors.swift in Sources */,
