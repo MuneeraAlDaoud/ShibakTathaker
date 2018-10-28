@@ -18,12 +18,8 @@ class ViewEventsTableViewCell: UITableViewCell {
     @IBOutlet weak var Event_month: UILabel!
     @IBOutlet weak var Event_year: UILabel!
     
-    @IBAction func bookATicket(_ sender: Any) {
-        
-//         self.performSegue(withIdentifier: "BookATicket", sender: self)
-        
-        
-    }
+    
+  
     
     
     
