@@ -14,6 +14,18 @@ class ViewEventsTableViewCell: UITableViewCell {
     @IBOutlet weak var Event_name: UILabel!
     @IBOutlet weak var Event_location: UILabel!
     @IBOutlet weak var Event_date: UILabel!
+    @IBOutlet weak var Event_type: UILabel!
+    @IBOutlet weak var Event_month: UILabel!
+    @IBOutlet weak var Event_year: UILabel!
+    
+    @IBAction func bookATicket(_ sender: Any) {
+        
+//         self.performSegue(withIdentifier: "BookATicket", sender: self)
+        
+        
+    }
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

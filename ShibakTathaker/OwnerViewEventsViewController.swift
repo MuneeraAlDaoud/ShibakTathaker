@@ -1,23 +1,22 @@
 //
-//  ViewEventsViewController.swift
+//  OwnerViewEventsViewController.swift
 //  ShibakTathaker
 //
-//  Created by Muneera AlDaoud on 09/02/1440 AH.
+//  Created by Muneera AlDaoud on 13/02/1440 AH.
 //  Copyright © 1440 Muneera AlDaoud. All rights reserved.
 //
 
 import UIKit
 import SQLite3
 
-class ViewEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-   
+class OwnerViewEventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
     @IBOutlet weak var EventsTableView: UITableView!
     
-      var eventsList=Dictionary<String, AnyObject>()
-      var eventsListBig=Array<AnyObject>()
+    var eventsList=Dictionary<String, AnyObject>()
+    var eventsListBig=Array<AnyObject>()
     
-//      var eventsList=[Dictionary<String, Any>]()
+    //      var eventsList=[Dictionary<String, Any>]()
     
     var db: OpaquePointer?
     
@@ -73,24 +72,24 @@ class ViewEventsViewController: UIViewController, UITableViewDelegate, UITableVi
             year = String(sqlite3_column_int(stmt, 6))
             hour = Int(sqlite3_column_int(stmt, 7))
             munite = Int(sqlite3_column_int(stmt, 8))
-
-            
-           /* eventsList.append(events(name: String(describing: name),location: String(describing: location),type: String(describing: type),day: Int(day),month: Int(month),year: Int(year),hour: Int(hour),munite: Int(munite)))*/
-            
-          /* eventsList = [
-            
-            [
-                "name":name,
-                "location":location,
-                "type":type,
-                "day":day,
-                "month":month,
-                "year":year
-                
-                ]
             
             
-        ]*/
+            /* eventsList.append(events(name: String(describing: name),location: String(describing: location),type: String(describing: type),day: Int(day),month: Int(month),year: Int(year),hour: Int(hour),munite: Int(munite)))*/
+            
+            /* eventsList = [
+             
+             [
+             "name":name,
+             "location":location,
+             "type":type,
+             "day":day,
+             "month":month,
+             "year":year
+             
+             ]
+             
+             
+             ]*/
             
             eventsList["name"]=name as AnyObject
             eventsList["location"]=location as AnyObject
@@ -101,15 +100,15 @@ class ViewEventsViewController: UIViewController, UITableViewDelegate, UITableVi
             
             eventsListBig.append(eventsList as AnyObject)
             
-           
             
-        // Do any additional setup after loading the view.
-    }
+            
+            // Do any additional setup after loading the view.
+        }
         
- 
         
-    
-}//end viewDidLoad
+        
+        
+    }//end viewDidLoad
     
     
     
@@ -126,16 +125,16 @@ class ViewEventsViewController: UIViewController, UITableViewDelegate, UITableVi
         
         
         
-//         let event1 = eventsListBig[0]
-//         let event = eventsList[indexPath.row]
-      
+        //         let event1 = eventsListBig[0]
+        //         let event = eventsList[indexPath.row]
         
-       /* cell.Event_name.text = event["name"] as? String
-        cell.Event_location.text = event["location"] as? String
-        cell.Event_type.text = event["type"] as? String
-        cell.Event_date.text = event["day"] as? String
-        //+" "+["month"]+" "+event["year"]*/
-//        print(self.eventsListBig[indexPath.row]["name"] as? String)
+        
+        /* cell.Event_name.text = event["name"] as? String
+         cell.Event_location.text = event["location"] as? String
+         cell.Event_type.text = event["type"] as? String
+         cell.Event_date.text = event["day"] as? String
+         //+" "+["month"]+" "+event["year"]*/
+        //        print(self.eventsListBig[indexPath.row]["name"] as? String)
         cell.Event_name.text = self.eventsListBig[indexPath.row]["name"] as? String
         cell.Event_location.text = self.eventsListBig[indexPath.row]["location"] as? String
         cell.Event_type.text = self.eventsListBig[indexPath.row]["type"] as? String
@@ -147,22 +146,23 @@ class ViewEventsViewController: UIViewController, UITableViewDelegate, UITableVi
         
         return cell
     }
-
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 155
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    
+    
 }//end Class
+
