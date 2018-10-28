@@ -50,6 +50,8 @@
 		DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CCC2157ADD500365AD1 /* Owner_loginViewController.swift */; };
 		DAA35CD52157C4B600365AD1 /* Visitor_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */; };
 		DAA35CD72157C69600365AD1 /* Participant_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */; };
+		F01C59E32185887E009ABF66 /* participants_EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C59E22185887E009ABF66 /* participants_EditProfileViewController.swift */; };
+		F01C59E521858950009ABF66 /* Owner_EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C59E421858950009ABF66 /* Owner_EditProfileViewController.swift */; };
 		F0E4A5792169DA59005EE6A2 /* Owner_AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +191,8 @@
 		DAA35CCC2157ADD500365AD1 /* Owner_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAA35CD42157C4B600365AD1 /* Visitor_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor_loginViewController.swift; sourceTree = SOURCE_ROOT; };
 		DAA35CD62157C69600365AD1 /* Participant_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant_loginViewController.swift; sourceTree = SOURCE_ROOT; };
+		F01C59E22185887E009ABF66 /* participants_EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = participants_EditProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		F01C59E421858950009ABF66 /* Owner_EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_EditProfileViewController.swift; sourceTree = "<group>"; };
 		F0E4A5782169DA59005EE6A2 /* Owner_AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner_AddEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +251,8 @@
 				DA718F3321502DF500839FA5 /* AppDelegate.swift */,
 				DA718F3521502DF500839FA5 /* ViewController.swift */,
 				DA718F3721502DF500839FA5 /* Main.storyboard */,
+				F01C59E421858950009ABF66 /* Owner_EditProfileViewController.swift */,
+				F01C59E22185887E009ABF66 /* participants_EditProfileViewController.swift */,
 				DA10C364217E61880009FA70 /* OwnerViewEventsViewController.swift */,
 				DA10C366217E6DAB0009FA70 /* GeneralViewEventsViewController.swift */,
 				DA10C362217E5E200009FA70 /* ParticipantViewEventsViewController.swift */,
@@ -528,6 +534,7 @@
 				DA10C32D216CF1A70009FA70 /* OwnerTableViewCell.swift in Sources */,
 				DA10C3032169CDD00009FA70 /* visitors.swift in Sources */,
 				DA10C330216CFE570009FA70 /* VIsitorHPViewController.swift in Sources */,
+				F01C59E521858950009ABF66 /* Owner_EditProfileViewController.swift in Sources */,
 				DA10C351217855C50009FA70 /* ViewEventsViewController.swift in Sources */,
 				DAA35CC02154E41C00365AD1 /* Owner registration view.swift in Sources */,
 				DA718F3621502DF500839FA5 /* ViewController.swift in Sources */,
@@ -542,6 +549,7 @@
 				DAA35CCD2157ADD500365AD1 /* Owner_loginViewController.swift in Sources */,
 				DA10C3432173ABE50009FA70 /* ParticipantProfileViewController.swift in Sources */,
 				DA10C3052169CF760009FA70 /* VisitorsTableViewController.swift in Sources */,
+				F01C59E32185887E009ABF66 /* participants_EditProfileViewController.swift in Sources */,
 				DAA35CCA21557DED00365AD1 /* Visitor_registration.swift in Sources */,
 				DA10C34D2173C0740009FA70 /* OwnerProfileViewController.swift in Sources */,
 				DAA35CC82154FEED00365AD1 /* Participant_registration.swift in Sources */,
